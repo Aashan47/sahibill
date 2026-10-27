@@ -1,0 +1,1810 @@
+{
+ "summary": {
+  "decisions_read": 40,
+  "unparseable": 0,
+  "e4b_scored": 30,
+  "e4b_matched": 11,
+  "e4b_strict": 15,
+  "e4b_strict_matched": 3,
+  "e4a_matched_same_decisions": 11,
+  "gaps": {
+   "both": 10,
+   "reading": 1,
+   "rules": 18,
+   "reading_added": 1
+  },
+  "e6_labelled_values": 168,
+  "e6_read_right": 154,
+  "e6_decisions_with_wrong_speaker": 8,
+  "e6_quote_checked_read_right": 115,
+  "e6_quote_checked_decisions_with_wrong_speaker": 5,
+  "quote_check": {
+   "pass": 562,
+   "fail": 393,
+   "unverifiable": 8
+  },
+  "e4b_match_rate": 0.367,
+  "e4b_strict_match_rate": 0.2,
+  "e6_value_accuracy": 0.917
+ },
+ "rows": [
+  {
+   "stem": "FESCO_0059",
+   "error": null,
+   "facts_read": 13,
+   "quote_check": {
+    "pass": 12,
+    "fail": 1,
+    "unverifiable": 0
+   },
+   "e6": {
+    "labelled": 7,
+    "read_right": 7,
+    "wrong_speaker": 3,
+    "wrong_speaker_items": [
+     [
+      "detection_units",
+      "20247.0",
+      "complainant",
+      "nepra"
+     ],
+     [
+      "detection_period_from",
+      "2023-03",
+      "complainant",
+      "nepra"
+     ],
+     [
+      "detection_period_to",
+      "2023-08",
+      "complainant",
+      "nepra"
+     ]
+    ]
+   },
+   "e6_quote_checked": {
+    "labelled": 7,
+    "read_right": 7,
+    "wrong_speaker": 3,
+    "wrong_speaker_items": [
+     [
+      "detection_units",
+      "20247.0",
+      "complainant",
+      "nepra"
+     ],
+     [
+      "detection_period_from",
+      "2023-03",
+      "complainant",
+      "nepra"
+     ],
+     [
+      "detection_period_to",
+      "2023-08",
+      "complainant",
+      "nepra"
+     ]
+    ]
+   },
+   "engine": [],
+   "missing": [
+    "issue date",
+    "load",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "e4a_set": "scored",
+   "e4a_match": false,
+   "e4a_leaky": false,
+   "match": false,
+   "gap": "rules"
+  },
+  {
+   "stem": "FESCO_0079",
+   "error": null,
+   "facts_read": 29,
+   "quote_check": {
+    "pass": 2,
+    "fail": 27,
+    "unverifiable": 0
+   },
+   "e6": {
+    "labelled": 6,
+    "read_right": 6,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "e6_quote_checked": {
+    "labelled": 6,
+    "read_right": 2,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "engine": [
+    "detection_procedure_not_followed"
+   ],
+   "missing": [
+    "issue date",
+    "load",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "e4a_set": "scored",
+   "e4a_match": false,
+   "e4a_leaky": false,
+   "match": false,
+   "gap": "rules"
+  },
+  {
+   "stem": "FESCO_0134",
+   "error": null,
+   "facts_read": 39,
+   "quote_check": {
+    "pass": 7,
+    "fail": 32,
+    "unverifiable": 0
+   },
+   "e6": {
+    "labelled": 6,
+    "read_right": 6,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "e6_quote_checked": {
+    "labelled": 6,
+    "read_right": 2,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "engine": [],
+   "missing": [
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": true,
+   "e4a_set": "not_scored",
+   "e4a_match": null,
+   "e4a_leaky": false
+  },
+  {
+   "stem": "GEPCO_0235",
+   "error": null,
+   "facts_read": 30,
+   "quote_check": {
+    "pass": 23,
+    "fail": 7,
+    "unverifiable": 0
+   },
+   "e6": {
+    "labelled": 3,
+    "read_right": 3,
+    "wrong_speaker": 2,
+    "wrong_speaker_items": [
+     [
+      "disputed_amount_rs",
+      "24852.0",
+      "complainant",
+      "nepra"
+     ],
+     [
+      "billing_month",
+      "2026-01",
+      "complainant",
+      "nepra"
+     ]
+    ]
+   },
+   "e6_quote_checked": {
+    "labelled": 3,
+    "read_right": 3,
+    "wrong_speaker": 2,
+    "wrong_speaker_items": [
+     [
+      "disputed_amount_rs",
+      "24852.0",
+      "complainant",
+      "nepra"
+     ],
+     [
+      "billing_month",
+      "2026-01",
+      "complainant",
+      "nepra"
+     ]
+    ]
+   },
+   "engine": [
+    "skipped_charges_beyond_recovery_limit"
+   ],
+   "missing": [
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": true,
+   "e4a_set": "scored",
+   "e4a_match": true,
+   "e4a_leaky": true,
+   "match": true,
+   "gap": "both"
+  },
+  {
+   "stem": "HESCO_0255",
+   "error": null,
+   "facts_read": 27,
+   "quote_check": {
+    "pass": 23,
+    "fail": 4,
+    "unverifiable": 0
+   },
+   "e6": {
+    "labelled": 4,
+    "read_right": 4,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "e6_quote_checked": {
+    "labelled": 4,
+    "read_right": 4,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "engine": [],
+   "missing": [
+    "billing month",
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "e4a_set": "not_scored",
+   "e4a_match": null,
+   "e4a_leaky": false
+  },
+  {
+   "stem": "HESCO_0268",
+   "error": null,
+   "facts_read": 21,
+   "quote_check": {
+    "pass": 16,
+    "fail": 5,
+    "unverifiable": 0
+   },
+   "e6": {
+    "labelled": 5,
+    "read_right": 5,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "e6_quote_checked": {
+    "labelled": 5,
+    "read_right": 5,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "engine": [
+    "detection_procedure_not_followed",
+    "retrieval_charge_beyond_time_limit"
+   ],
+   "missing": [
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": true,
+   "e4a_set": "scored",
+   "e4a_match": false,
+   "e4a_leaky": true,
+   "match": true,
+   "gap": "reading_added"
+  },
+  {
+   "stem": "IESCO_0316",
+   "error": null,
+   "facts_read": 19,
+   "quote_check": {
+    "pass": 14,
+    "fail": 5,
+    "unverifiable": 0
+   },
+   "e6": {
+    "labelled": 1,
+    "read_right": 1,
+    "wrong_speaker": 1,
+    "wrong_speaker_items": [
+     [
+      "billing_month",
+      "2024-02",
+      "nepra",
+      "complainant"
+     ]
+    ]
+   },
+   "e6_quote_checked": {
+    "labelled": 1,
+    "read_right": 1,
+    "wrong_speaker": 1,
+    "wrong_speaker_items": [
+     [
+      "billing_month",
+      "2024-02",
+      "nepra",
+      "complainant"
+     ]
+    ]
+   },
+   "engine": [],
+   "missing": [
+    "billing month",
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "e4a_set": "scored",
+   "e4a_match": false,
+   "e4a_leaky": false,
+   "match": false,
+   "gap": "rules"
+  },
+  {
+   "stem": "IESCO_0326",
+   "error": null,
+   "facts_read": 94,
+   "quote_check": {
+    "pass": 7,
+    "fail": 87,
+    "unverifiable": 0
+   },
+   "e6": {
+    "labelled": 2,
+    "read_right": 2,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "e6_quote_checked": {
+    "labelled": 2,
+    "read_right": 1,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "engine": [
+    "average_billing_beyond_limit"
+   ],
+   "missing": [
+    "billing month",
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": true,
+   "e4a_set": "not_scored",
+   "e4a_match": null,
+   "e4a_leaky": false
+  },
+  {
+   "stem": "IESCO_0329",
+   "error": null,
+   "facts_read": 15,
+   "quote_check": {
+    "pass": 4,
+    "fail": 11,
+    "unverifiable": 0
+   },
+   "e6": {
+    "labelled": 6,
+    "read_right": 6,
+    "wrong_speaker": 3,
+    "wrong_speaker_items": [
+     [
+      "disputed_amount_rs",
+      "7872432.0",
+      "nepra",
+      "disco"
+     ],
+     [
+      "detection_period_from",
+      "2017-11",
+      "nepra",
+      "disco"
+     ],
+     [
+      "detection_period_to",
+      "2024-08",
+      "nepra",
+      "disco"
+     ]
+    ]
+   },
+   "e6_quote_checked": {
+    "labelled": 6,
+    "read_right": 2,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "engine": [
+    "skipped_charges_beyond_recovery_limit"
+   ],
+   "missing": [
+    "billing month",
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "e4a_set": "scored",
+   "e4a_match": true,
+   "e4a_leaky": false,
+   "match": true,
+   "gap": "both"
+  },
+  {
+   "stem": "IESCO_0330",
+   "error": null,
+   "facts_read": 21,
+   "quote_check": {
+    "pass": 9,
+    "fail": 12,
+    "unverifiable": 0
+   },
+   "e6": {
+    "labelled": 5,
+    "read_right": 4,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "e6_quote_checked": {
+    "labelled": 5,
+    "read_right": 3,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "engine_error": "TypeError(\"unsupported operand type(s) for /: 'NoneType' and 'int'\")",
+   "engine": [],
+   "missing": [],
+   "leaky": true,
+   "e4a_set": "scored",
+   "e4a_match": false,
+   "e4a_leaky": false,
+   "match": false,
+   "gap": "rules"
+  },
+  {
+   "stem": "IESCO_0342",
+   "error": null,
+   "facts_read": 42,
+   "quote_check": {
+    "pass": 34,
+    "fail": 8,
+    "unverifiable": 0
+   },
+   "e6": {
+    "labelled": 6,
+    "read_right": 6,
+    "wrong_speaker": 5,
+    "wrong_speaker_items": [
+     [
+      "detection_units",
+      "391039.0",
+      "disco",
+      "nepra"
+     ],
+     [
+      "disputed_amount_rs",
+      "16468159.0",
+      "disco",
+      "nepra"
+     ],
+     [
+      "detection_months",
+      "50.0",
+      "disco",
+      "nepra"
+     ],
+     [
+      "detection_period_from",
+      "2019-12",
+      "disco",
+      "nepra"
+     ],
+     [
+      "detection_period_to",
+      "2024-01",
+      "disco",
+      "nepra"
+     ]
+    ]
+   },
+   "e6_quote_checked": {
+    "labelled": 6,
+    "read_right": 5,
+    "wrong_speaker": 5,
+    "wrong_speaker_items": [
+     [
+      "detection_units",
+      "391039.0",
+      "disco",
+      "nepra"
+     ],
+     [
+      "disputed_amount_rs",
+      "16468159.0",
+      "disco",
+      "nepra"
+     ],
+     [
+      "detection_months",
+      "50.0",
+      "disco",
+      "nepra"
+     ],
+     [
+      "detection_period_from",
+      "2019-12",
+      "disco",
+      "nepra"
+     ],
+     [
+      "detection_period_to",
+      "2024-01",
+      "disco",
+      "nepra"
+     ]
+    ]
+   },
+   "engine": [
+    "detection_load_or_period_exceeds_limits",
+    "detection_procedure_not_followed",
+    "skipped_charges_beyond_recovery_limit"
+   ],
+   "missing": [
+    "billing month",
+    "consumption of the comparison months",
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": true,
+   "e4a_set": "scored",
+   "e4a_match": true,
+   "e4a_leaky": false,
+   "match": true,
+   "gap": "both"
+  },
+  {
+   "stem": "IESCO_0357",
+   "error": null,
+   "facts_read": 30,
+   "quote_check": {
+    "pass": 18,
+    "fail": 12,
+    "unverifiable": 0
+   },
+   "e6": {
+    "labelled": 6,
+    "read_right": 1,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "e6_quote_checked": {
+    "labelled": 6,
+    "read_right": 1,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "engine": [],
+   "missing": [
+    "billing month",
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "e4a_set": "scored",
+   "e4a_match": false,
+   "e4a_leaky": false,
+   "match": false,
+   "gap": "rules"
+  },
+  {
+   "stem": "K-Electric_0427",
+   "error": null,
+   "facts_read": 15,
+   "quote_check": {
+    "pass": 14,
+    "fail": 1,
+    "unverifiable": 0
+   },
+   "e6": {
+    "labelled": 6,
+    "read_right": 6,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "e6_quote_checked": {
+    "labelled": 6,
+    "read_right": 6,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "engine": [],
+   "missing": [
+    "CEO or committee approval (never printed on a bill)",
+    "billing month",
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "e4a_set": "scored",
+   "e4a_match": false,
+   "e4a_leaky": false,
+   "match": false,
+   "gap": "rules"
+  },
+  {
+   "stem": "K-Electric_0441",
+   "error": null,
+   "facts_read": 76,
+   "quote_check": {
+    "pass": 71,
+    "fail": 5,
+    "unverifiable": 0
+   },
+   "e6": {
+    "labelled": 1,
+    "read_right": 0,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "e6_quote_checked": {
+    "labelled": 1,
+    "read_right": 0,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "engine": [
+    "average_billing_beyond_limit"
+   ],
+   "missing": [
+    "billing month",
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "reading date",
+    "retrieval date (not printed on bills)",
+    "snapshot",
+    "units",
+    "whether the meter was sent to the manufacturer"
+   ],
+   "leaky": false,
+   "e4a_set": "scored",
+   "e4a_match": false,
+   "e4a_leaky": false,
+   "match": false,
+   "gap": "rules"
+  },
+  {
+   "stem": "K-Electric_0447",
+   "error": null,
+   "facts_read": 17,
+   "quote_check": {
+    "pass": 4,
+    "fail": 13,
+    "unverifiable": 0
+   },
+   "e6": {
+    "labelled": 5,
+    "read_right": 5,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "e6_quote_checked": {
+    "labelled": 5,
+    "read_right": 1,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "engine": [],
+   "missing": [
+    "CEO or committee approval (never printed on a bill)",
+    "billing month",
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "e4a_set": "scored",
+   "e4a_match": false,
+   "e4a_leaky": false,
+   "match": false,
+   "gap": "rules"
+  },
+  {
+   "stem": "K-Electric_0470",
+   "error": null,
+   "facts_read": 33,
+   "quote_check": {
+    "pass": 3,
+    "fail": 30,
+    "unverifiable": 0
+   },
+   "e6": {
+    "labelled": 8,
+    "read_right": 8,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "e6_quote_checked": {
+    "labelled": 8,
+    "read_right": 1,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "engine": [],
+   "missing": [
+    "billing month",
+    "consumption of the comparison months",
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": true,
+   "e4a_set": "scored",
+   "e4a_match": true,
+   "e4a_leaky": true,
+   "match": false,
+   "gap": "reading"
+  },
+  {
+   "stem": "K-Electric_0546",
+   "error": null,
+   "facts_read": 0,
+   "quote_check": {
+    "pass": 0,
+    "fail": 0,
+    "unverifiable": 0
+   },
+   "e6": {
+    "labelled": 0,
+    "read_right": 0,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "e6_quote_checked": {
+    "labelled": 0,
+    "read_right": 0,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "engine": [],
+   "missing": [
+    "billing month",
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "e4a_set": "not_scored",
+   "e4a_match": null,
+   "e4a_leaky": false
+  },
+  {
+   "stem": "K-Electric_0619",
+   "error": null,
+   "facts_read": 23,
+   "quote_check": {
+    "pass": 12,
+    "fail": 11,
+    "unverifiable": 0
+   },
+   "e6": {
+    "labelled": 2,
+    "read_right": 2,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "e6_quote_checked": {
+    "labelled": 2,
+    "read_right": 0,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "engine": [
+    "average_billing_beyond_limit"
+   ],
+   "missing": [
+    "billing month",
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "e4a_set": "scored",
+   "e4a_match": false,
+   "e4a_leaky": false,
+   "match": false,
+   "gap": "rules"
+  },
+  {
+   "stem": "K-Electric_0628",
+   "error": null,
+   "facts_read": 24,
+   "quote_check": {
+    "pass": 16,
+    "fail": 8,
+    "unverifiable": 0
+   },
+   "e6": {
+    "labelled": 6,
+    "read_right": 6,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "e6_quote_checked": {
+    "labelled": 6,
+    "read_right": 6,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "engine": [],
+   "missing": [
+    "billing month",
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "e4a_set": "scored",
+   "e4a_match": false,
+   "e4a_leaky": false,
+   "match": false,
+   "gap": "rules"
+  },
+  {
+   "stem": "LESCO_0782",
+   "error": null,
+   "facts_read": 6,
+   "quote_check": {
+    "pass": 6,
+    "fail": 0,
+    "unverifiable": 0
+   },
+   "e6": {
+    "labelled": 2,
+    "read_right": 2,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "e6_quote_checked": {
+    "labelled": 2,
+    "read_right": 2,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "engine": [],
+   "missing": [
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "e4a_set": "scored",
+   "e4a_match": false,
+   "e4a_leaky": false,
+   "match": false,
+   "gap": "rules"
+  },
+  {
+   "stem": "LESCO_0783",
+   "error": null,
+   "facts_read": 10,
+   "quote_check": {
+    "pass": 9,
+    "fail": 1,
+    "unverifiable": 0
+   },
+   "e6": {
+    "labelled": 2,
+    "read_right": 1,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "e6_quote_checked": {
+    "labelled": 2,
+    "read_right": 1,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "engine": [
+    "snapshot_missing_or_mismatch"
+   ],
+   "missing": [
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "units"
+   ],
+   "leaky": false,
+   "e4a_set": "scored",
+   "e4a_match": true,
+   "e4a_leaky": false,
+   "match": true,
+   "gap": "both"
+  },
+  {
+   "stem": "LESCO_0790",
+   "error": null,
+   "facts_read": 7,
+   "quote_check": {
+    "pass": 7,
+    "fail": 0,
+    "unverifiable": 0
+   },
+   "e6": {
+    "labelled": 2,
+    "read_right": 2,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "e6_quote_checked": {
+    "labelled": 2,
+    "read_right": 2,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "engine": [],
+   "missing": [
+    "billing month",
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "reading date",
+    "retrieval date (not printed on bills)",
+    "snapshot",
+    "units",
+    "whether the meter was sent to the manufacturer"
+   ],
+   "leaky": false,
+   "e4a_set": "not_scored",
+   "e4a_match": null,
+   "e4a_leaky": false
+  },
+  {
+   "stem": "LESCO_0821",
+   "error": null,
+   "facts_read": 7,
+   "quote_check": {
+    "pass": 7,
+    "fail": 0,
+    "unverifiable": 0
+   },
+   "e6": {
+    "labelled": 2,
+    "read_right": 2,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "e6_quote_checked": {
+    "labelled": 2,
+    "read_right": 2,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "engine": [
+    "snapshot_missing_or_mismatch"
+   ],
+   "missing": [
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "units"
+   ],
+   "leaky": false,
+   "e4a_set": "scored",
+   "e4a_match": true,
+   "e4a_leaky": false,
+   "match": true,
+   "gap": "both"
+  },
+  {
+   "stem": "LESCO_0831",
+   "error": null,
+   "facts_read": 9,
+   "quote_check": {
+    "pass": 0,
+    "fail": 9,
+    "unverifiable": 0
+   },
+   "e6": {
+    "labelled": 6,
+    "read_right": 6,
+    "wrong_speaker": 6,
+    "wrong_speaker_items": [
+     [
+      "detection_units",
+      "851.0",
+      "nepra",
+      "disco"
+     ],
+     [
+      "connected_load_kw",
+      "3.03",
+      "nepra",
+      "disco"
+     ],
+     [
+      "detection_months",
+      "3.0",
+      "nepra",
+      "disco"
+     ],
+     [
+      "detection_period_from",
+      "2023-10",
+      "nepra",
+      "disco"
+     ],
+     [
+      "detection_period_to",
+      "2023-12",
+      "nepra",
+      "disco"
+     ],
+     [
+      "billing_month",
+      "2024-03",
+      "nepra",
+      "disco"
+     ]
+    ]
+   },
+   "e6_quote_checked": {
+    "labelled": 6,
+    "read_right": 0,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "engine": [],
+   "missing": [
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot",
+    "status or rate applied on the bill"
+   ],
+   "leaky": true,
+   "e4a_set": "not_scored",
+   "e4a_match": null,
+   "e4a_leaky": true
+  },
+  {
+   "stem": "LESCO_0842",
+   "error": null,
+   "facts_read": 7,
+   "quote_check": {
+    "pass": 7,
+    "fail": 0,
+    "unverifiable": 0
+   },
+   "e6": {
+    "labelled": 3,
+    "read_right": 2,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "e6_quote_checked": {
+    "labelled": 3,
+    "read_right": 2,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "engine": [
+    "accumulated_units_charged_at_once",
+    "snapshot_missing_or_mismatch"
+   ],
+   "missing": [
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "units"
+   ],
+   "leaky": true,
+   "e4a_set": "scored",
+   "e4a_match": true,
+   "e4a_leaky": false,
+   "match": true,
+   "gap": "both"
+  },
+  {
+   "stem": "LESCO_0847",
+   "error": null,
+   "facts_read": 38,
+   "quote_check": {
+    "pass": 28,
+    "fail": 10,
+    "unverifiable": 0
+   },
+   "e6": {
+    "labelled": 3,
+    "read_right": 3,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "e6_quote_checked": {
+    "labelled": 3,
+    "read_right": 3,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "engine": [
+    "snapshot_missing_or_mismatch"
+   ],
+   "missing": [
+    "issue date",
+    "meter replacement date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "same month of the previous year",
+    "units",
+    "units of the last eleven months"
+   ],
+   "leaky": true,
+   "e4a_set": "scored",
+   "e4a_match": true,
+   "e4a_leaky": false,
+   "match": true,
+   "gap": "both"
+  },
+  {
+   "stem": "LESCO_0966",
+   "error": null,
+   "facts_read": 18,
+   "quote_check": {
+    "pass": 10,
+    "fail": 8,
+    "unverifiable": 0
+   },
+   "e6": {
+    "labelled": 7,
+    "read_right": 7,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "e6_quote_checked": {
+    "labelled": 7,
+    "read_right": 7,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "engine": [
+    "detection_procedure_not_followed"
+   ],
+   "missing": [
+    "issue date",
+    "load",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": true,
+   "e4a_set": "scored",
+   "e4a_match": false,
+   "e4a_leaky": true,
+   "match": false,
+   "gap": "rules"
+  },
+  {
+   "stem": "LESCO_1030",
+   "error": null,
+   "facts_read": 20,
+   "quote_check": {
+    "pass": 15,
+    "fail": 5,
+    "unverifiable": 0
+   },
+   "e6": {
+    "labelled": 3,
+    "read_right": 2,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "e6_quote_checked": {
+    "labelled": 3,
+    "read_right": 1,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "engine": [],
+   "missing": [
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "retrieval date (not printed on bills)",
+    "snapshot",
+    "status or rate applied on the bill",
+    "whether the meter was sent to the manufacturer"
+   ],
+   "leaky": true,
+   "e4a_set": "scored",
+   "e4a_match": false,
+   "e4a_leaky": false,
+   "match": false,
+   "gap": "rules"
+  },
+  {
+   "stem": "LESCO_1032",
+   "error": null,
+   "facts_read": 21,
+   "quote_check": {
+    "pass": 16,
+    "fail": 5,
+    "unverifiable": 0
+   },
+   "e6": {
+    "labelled": 6,
+    "read_right": 6,
+    "wrong_speaker": 2,
+    "wrong_speaker_items": [
+     [
+      "detection_period_from",
+      "2024-03",
+      "disco",
+      "nepra"
+     ],
+     [
+      "detection_period_to",
+      "2024-08",
+      "disco",
+      "nepra"
+     ]
+    ]
+   },
+   "e6_quote_checked": {
+    "labelled": 6,
+    "read_right": 6,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "engine": [
+    "detection_units_formula_error"
+   ],
+   "missing": [
+    "billing month",
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": true,
+   "e4a_set": "scored",
+   "e4a_match": false,
+   "e4a_leaky": true,
+   "match": false,
+   "gap": "rules"
+  },
+  {
+   "stem": "LESCO_1051",
+   "error": null,
+   "facts_read": 32,
+   "quote_check": {
+    "pass": 28,
+    "fail": 4,
+    "unverifiable": 0
+   },
+   "e6": {
+    "labelled": 6,
+    "read_right": 6,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "e6_quote_checked": {
+    "labelled": 6,
+    "read_right": 6,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "engine": [
+    "average_billing_beyond_limit",
+    "detection_procedure_not_followed",
+    "detection_units_formula_error"
+   ],
+   "missing": [
+    "consumption of the comparison months",
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": true,
+   "e4a_set": "scored",
+   "e4a_match": true,
+   "e4a_leaky": true,
+   "match": true,
+   "gap": "both"
+  },
+  {
+   "stem": "LESCO_1053",
+   "error": null,
+   "facts_read": 16,
+   "quote_check": {
+    "pass": 15,
+    "fail": 1,
+    "unverifiable": 0
+   },
+   "e6": {
+    "labelled": 5,
+    "read_right": 5,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "e6_quote_checked": {
+    "labelled": 5,
+    "read_right": 5,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "engine": [
+    "average_billing_beyond_limit",
+    "detection_procedure_not_followed"
+   ],
+   "missing": [
+    "issue date",
+    "load",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "retrieval date (not printed on bills)",
+    "snapshot",
+    "units",
+    "whether the meter was sent to the manufacturer"
+   ],
+   "leaky": true,
+   "e4a_set": "scored",
+   "e4a_match": true,
+   "e4a_leaky": false,
+   "match": true,
+   "gap": "both"
+  },
+  {
+   "stem": "LESCO_1062",
+   "error": null,
+   "facts_read": 13,
+   "quote_check": {
+    "pass": 7,
+    "fail": 6,
+    "unverifiable": 0
+   },
+   "e6": {
+    "labelled": 3,
+    "read_right": 2,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "e6_quote_checked": {
+    "labelled": 3,
+    "read_right": 1,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "engine": [
+    "detection_procedure_not_followed"
+   ],
+   "missing": [
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "retrieval date (not printed on bills)",
+    "snapshot",
+    "status or rate applied on the bill",
+    "whether the meter was sent to the manufacturer"
+   ],
+   "leaky": true,
+   "e4a_set": "scored",
+   "e4a_match": false,
+   "e4a_leaky": false,
+   "match": false,
+   "gap": "rules"
+  },
+  {
+   "stem": "LESCO_1063",
+   "error": null,
+   "facts_read": 22,
+   "quote_check": {
+    "pass": 19,
+    "fail": 3,
+    "unverifiable": 0
+   },
+   "e6": {
+    "labelled": 7,
+    "read_right": 6,
+    "wrong_speaker": 4,
+    "wrong_speaker_items": [
+     [
+      "detection_units",
+      "4509.0",
+      "disco",
+      "nepra"
+     ],
+     [
+      "detection_months",
+      "6.0",
+      "disco",
+      "nepra"
+     ],
+     [
+      "detection_period_from",
+      "2023-12",
+      "disco",
+      "nepra"
+     ],
+     [
+      "detection_period_to",
+      "2024-05",
+      "disco",
+      "nepra"
+     ]
+    ]
+   },
+   "e6_quote_checked": {
+    "labelled": 7,
+    "read_right": 5,
+    "wrong_speaker": 3,
+    "wrong_speaker_items": [
+     [
+      "detection_units",
+      "4509.0",
+      "disco",
+      "nepra"
+     ],
+     [
+      "detection_period_from",
+      "2023-12",
+      "disco",
+      "nepra"
+     ],
+     [
+      "detection_period_to",
+      "2024-05",
+      "disco",
+      "nepra"
+     ]
+    ]
+   },
+   "engine": [
+    "detection_procedure_not_followed"
+   ],
+   "missing": [
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "e4a_set": "scored",
+   "e4a_match": false,
+   "e4a_leaky": true,
+   "match": false,
+   "gap": "rules"
+  },
+  {
+   "stem": "LESCO_1067",
+   "error": null,
+   "facts_read": 31,
+   "quote_check": {
+    "pass": 19,
+    "fail": 12,
+    "unverifiable": 0
+   },
+   "e6": {
+    "labelled": 1,
+    "read_right": 1,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "e6_quote_checked": {
+    "labelled": 1,
+    "read_right": 1,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "engine": [],
+   "missing": [
+    "billing month",
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "e4a_set": "not_scored",
+   "e4a_match": null,
+   "e4a_leaky": false
+  },
+  {
+   "stem": "LESCO_1183",
+   "error": null,
+   "facts_read": 26,
+   "quote_check": {
+    "pass": 11,
+    "fail": 15,
+    "unverifiable": 0
+   },
+   "e6": {
+    "labelled": 5,
+    "read_right": 5,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "e6_quote_checked": {
+    "labelled": 5,
+    "read_right": 4,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "engine": [],
+   "missing": [
+    "consumption of the comparison months",
+    "issue date",
+    "load",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": true,
+   "e4a_set": "scored",
+   "e4a_match": false,
+   "e4a_leaky": true,
+   "match": false,
+   "gap": "rules"
+  },
+  {
+   "stem": "MEPCO_1243",
+   "error": null,
+   "facts_read": 12,
+   "quote_check": {
+    "pass": 10,
+    "fail": 2,
+    "unverifiable": 0
+   },
+   "e6": {
+    "labelled": 5,
+    "read_right": 3,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "e6_quote_checked": {
+    "labelled": 5,
+    "read_right": 3,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "engine": [],
+   "missing": [
+    "billing month",
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "e4a_set": "specificity",
+   "e4a_match": null,
+   "e4a_leaky": false
+  },
+  {
+   "stem": "MEPCO_1266",
+   "error": null,
+   "facts_read": 12,
+   "quote_check": {
+    "pass": 8,
+    "fail": 4,
+    "unverifiable": 0
+   },
+   "e6": {
+    "labelled": 2,
+    "read_right": 2,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "e6_quote_checked": {
+    "labelled": 2,
+    "read_right": 2,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "engine": [
+    "accumulated_units_charged_at_once"
+   ],
+   "missing": [
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot",
+    "status or rate applied on the bill"
+   ],
+   "leaky": false,
+   "e4a_set": "scored",
+   "e4a_match": false,
+   "e4a_leaky": false,
+   "match": false,
+   "gap": "rules"
+  },
+  {
+   "stem": "PESCO_1391",
+   "error": null,
+   "facts_read": 8,
+   "quote_check": {
+    "pass": 0,
+    "fail": 0,
+    "unverifiable": 8
+   },
+   "e6": {
+    "labelled": 4,
+    "read_right": 4,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "e6_quote_checked": {
+    "labelled": 4,
+    "read_right": 4,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "engine": [
+    "accumulated_units_charged_at_once"
+   ],
+   "missing": [
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": true,
+   "e4a_set": "not_scored",
+   "e4a_match": null,
+   "e4a_leaky": false
+  },
+  {
+   "stem": "QESCO_1469",
+   "error": null,
+   "facts_read": 27,
+   "quote_check": {
+    "pass": 20,
+    "fail": 7,
+    "unverifiable": 0
+   },
+   "e6": {
+    "labelled": 6,
+    "read_right": 6,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "e6_quote_checked": {
+    "labelled": 6,
+    "read_right": 6,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "engine": [
+    "accumulated_units_charged_at_once"
+   ],
+   "missing": [
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot"
+   ],
+   "leaky": true,
+   "e4a_set": "scored",
+   "e4a_match": true,
+   "e4a_leaky": true,
+   "match": true,
+   "gap": "both"
+  },
+  {
+   "stem": "QESCO_1471",
+   "error": null,
+   "facts_read": 53,
+   "quote_check": {
+    "pass": 31,
+    "fail": 22,
+    "unverifiable": 0
+   },
+   "e6": {
+    "labelled": 3,
+    "read_right": 3,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "e6_quote_checked": {
+    "labelled": 3,
+    "read_right": 2,
+    "wrong_speaker": 0,
+    "wrong_speaker_items": []
+   },
+   "engine": [
+    "detection_procedure_not_followed",
+    "skipped_charges_beyond_recovery_limit"
+   ],
+   "missing": [
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": true,
+   "e4a_set": "not_scored",
+   "e4a_match": null,
+   "e4a_leaky": false
+  }
+ ]
+}

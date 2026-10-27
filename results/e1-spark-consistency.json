@@ -1,0 +1,297 @@
+{
+ "split": "test",
+ "by_level": {
+  "0": {
+   "fields": 408,
+   "right": 408,
+   "abstained": 0,
+   "images": 25,
+   "hist": 300,
+   "hist_right": 300,
+   "accuracy_on_read": 1.0,
+   "accuracy_all": 1.0,
+   "history_accuracy": 1.0
+  },
+  "1": {
+   "fields": 408,
+   "right": 408,
+   "abstained": 0,
+   "images": 25,
+   "hist": 300,
+   "hist_right": 300,
+   "accuracy_on_read": 1.0,
+   "accuracy_all": 1.0,
+   "history_accuracy": 1.0
+  },
+  "2": {
+   "fields": 408,
+   "right": 402,
+   "abstained": 6,
+   "images": 25,
+   "hist": 300,
+   "hist_right": 296,
+   "accuracy_on_read": 1.0,
+   "accuracy_all": 0.9853,
+   "history_accuracy": 0.9867
+  },
+  "3": {
+   "fields": 408,
+   "right": 177,
+   "abstained": 190,
+   "images": 25,
+   "hist": 300,
+   "hist_right": 105,
+   "accuracy_on_read": 0.8119,
+   "accuracy_all": 0.4338,
+   "history_accuracy": 0.35
+  }
+ },
+ "errors": [
+  {
+   "image": "syn0001_L3",
+   "field": "fca",
+   "truth": 270.5,
+   "read": 270.3
+  },
+  {
+   "image": "syn0001_L3",
+   "field": "gst",
+   "truth": 1079.45,
+   "read": 1079.43
+  },
+  {
+   "image": "syn0001_L3",
+   "field": "payable_within",
+   "truth": 7076.0,
+   "read": 7076.06
+  },
+  {
+   "image": "syn0005_L3",
+   "field": "prev_reading_date",
+   "truth": "2026-09-12",
+   "read": "2026-09-13"
+  },
+  {
+   "image": "syn0005_L3",
+   "field": "sanctioned_load_kw",
+   "truth": 1.0,
+   "read": 3.0
+  },
+  {
+   "image": "syn0005_L3",
+   "field": "variable",
+   "truth": 6686.2,
+   "read": 8489.39
+  },
+  {
+   "image": "syn0005_L3",
+   "field": "fixed",
+   "truth": 350,
+   "read": 200.0
+  },
+  {
+   "image": "syn0005_L3",
+   "field": "qta",
+   "truth": 104.92,
+   "read": 154.93
+  },
+  {
+   "image": "syn0005_L3",
+   "field": "gst",
+   "truth": 1338.48,
+   "read": 1520.48
+  },
+  {
+   "image": "syn0007_L3",
+   "field": "payable_within",
+   "truth": 3614.0,
+   "read": 3814.0
+  },
+  {
+   "image": "syn0009_L3",
+   "field": "billing_month",
+   "truth": "2026-10",
+   "read": "2025-10"
+  },
+  {
+   "image": "syn0009_L3",
+   "field": "prev_reading_date",
+   "truth": "2026-09-05",
+   "read": "2025-09-05"
+  },
+  {
+   "image": "syn0009_L3",
+   "field": "sanctioned_load_kw",
+   "truth": 3.0,
+   "read": 2.0
+  },
+  {
+   "image": "syn0011_L3",
+   "field": "billing_month",
+   "truth": "2026-10",
+   "read": "2025-10"
+  },
+  {
+   "image": "syn0011_L3",
+   "field": "reading_date",
+   "truth": "2026-10-14",
+   "read": "2025-10-14"
+  },
+  {
+   "image": "syn0011_L3",
+   "field": "issue_date",
+   "truth": "2026-10-18",
+   "read": "2025-10-19"
+  },
+  {
+   "image": "syn0011_L3",
+   "field": "due_date",
+   "truth": "2026-10-21",
+   "read": "2025-10-21"
+  },
+  {
+   "image": "syn0011_L3",
+   "field": "prev_reading",
+   "truth": 57639,
+   "read": 57643
+  },
+  {
+   "image": "syn0011_L3",
+   "field": "units",
+   "truth": 39,
+   "read": 35
+  },
+  {
+   "image": "syn0013_L3",
+   "field": "reading_date",
+   "truth": "2026-10-12",
+   "read": "2026-10-13"
+  },
+  {
+   "image": "syn0015_L3",
+   "field": "prev_reading_date",
+   "truth": "2026-09-13",
+   "read": "2026-09-07"
+  },
+  {
+   "image": "syn0021_L3",
+   "field": "billing_month",
+   "truth": "2026-10",
+   "read": "2025-10"
+  },
+  {
+   "image": "syn0021_L3",
+   "field": "units",
+   "truth": 180,
+   "read": 100
+  },
+  {
+   "image": "syn0025_L3",
+   "field": "sanctioned_load_kw",
+   "truth": 1.0,
+   "read": 1.5
+  },
+  {
+   "image": "syn0027_L3",
+   "field": "billing_month",
+   "truth": "2026-10",
+   "read": "2025-10"
+  },
+  {
+   "image": "syn0027_L3",
+   "field": "issue_date",
+   "truth": "2026-10-12",
+   "read": "2025-10-13"
+  },
+  {
+   "image": "syn0027_L3",
+   "field": "due_date",
+   "truth": "2026-10-25",
+   "read": "2025-10-25"
+  },
+  {
+   "image": "syn0027_L3",
+   "field": "sanctioned_load_kw",
+   "truth": 3.0,
+   "read": 2.0
+  },
+  {
+   "image": "syn0027_L3",
+   "field": "variable",
+   "truth": 19280.25,
+   "read": 18280.25
+  },
+  {
+   "image": "syn0027_L3",
+   "field": "fixed",
+   "truth": 1500,
+   "read": 1000.0
+  },
+  {
+   "image": "syn0029_L3",
+   "field": "prev_reading_date",
+   "truth": "2026-09-13",
+   "read": "2025-08-13"
+  },
+  {
+   "image": "syn0031_L3",
+   "field": "sanctioned_load_kw",
+   "truth": 3.0,
+   "read": 2.0
+  },
+  {
+   "image": "syn0033_L3",
+   "field": "prev_reading",
+   "truth": 43155,
+   "read": 43159
+  },
+  {
+   "image": "syn0033_L3",
+   "field": "units",
+   "truth": 279,
+   "read": 275
+  },
+  {
+   "image": "syn0035_L3",
+   "field": "reading_date",
+   "truth": "2026-10-12",
+   "read": "2026-10-13"
+  },
+  {
+   "image": "syn0045_L3",
+   "field": "issue_date",
+   "truth": "2026-10-16",
+   "read": "2026-10-18"
+  },
+  {
+   "image": "syn0047_L3",
+   "field": "prev_reading",
+   "truth": 30717,
+   "read": 30713
+  },
+  {
+   "image": "syn0047_L3",
+   "field": "present_reading",
+   "truth": 31241,
+   "read": 31341
+  },
+  {
+   "image": "syn0047_L3",
+   "field": "units",
+   "truth": 524,
+   "read": 628
+  },
+  {
+   "image": "syn0049_L3",
+   "field": "due_date",
+   "truth": "2026-10-20",
+   "read": "2026-10-29"
+  },
+  {
+   "image": "syn0049_L3",
+   "field": "sanctioned_load_kw",
+   "truth": 2.0,
+   "read": 3.0
+  }
+ ]
+}

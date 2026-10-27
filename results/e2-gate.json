@@ -1,0 +1,788 @@
+{
+ "gate_by_level": {
+  "0": {
+   "kept": 25,
+   "refused": 0
+  },
+  "1": {
+   "kept": 25,
+   "refused": 0
+  },
+  "2": {
+   "kept": 25,
+   "refused": 0
+  },
+  "3": {
+   "kept": 1,
+   "refused": 24
+  }
+ },
+ "arms": {
+  "Spark Open alone": {
+   "without": {
+    "fields": 1632,
+    "accepted": 1552,
+    "coverage": 0.951,
+    "wrong": 113,
+    "wrong_rate": 0.0728
+   },
+   "with": {
+    "fields": 1632,
+    "accepted": 1239,
+    "coverage": 0.7592,
+    "wrong": 9,
+    "wrong_rate": 0.0073
+   }
+  },
+  "Glimmer alone": {
+   "without": {
+    "fields": 1632,
+    "accepted": 1535,
+    "coverage": 0.9406,
+    "wrong": 125,
+    "wrong_rate": 0.0814
+   },
+   "with": {
+    "fields": 1632,
+    "accepted": 1223,
+    "coverage": 0.7494,
+    "wrong": 2,
+    "wrong_rate": 0.0016
+   }
+  },
+  "Spark Open + consistency": {
+   "without": {
+    "fields": 1632,
+    "accepted": 1436,
+    "coverage": 0.8799,
+    "wrong": 41,
+    "wrong_rate": 0.0286
+   },
+   "with": {
+    "fields": 1632,
+    "accepted": 1224,
+    "coverage": 0.75,
+    "wrong": 1,
+    "wrong_rate": 0.0008
+   }
+  },
+  "Spark Open + Glimmer + consistency (pre-registered)": {
+   "without": {
+    "fields": 1632,
+    "accepted": 1396,
+    "coverage": 0.8554,
+    "wrong": 23,
+    "wrong_rate": 0.0165
+   },
+   "with": {
+    "fields": 1632,
+    "accepted": 1215,
+    "coverage": 0.7445,
+    "wrong": 0,
+    "wrong_rate": 0.0
+   }
+  }
+ },
+ "photos": {
+  "syn0001_L0": {
+   "level": 0,
+   "ok": true,
+   "sharpness": 156.49,
+   "contrast": 115.0,
+   "reason": null
+  },
+  "syn0001_L1": {
+   "level": 1,
+   "ok": true,
+   "sharpness": 136.88,
+   "contrast": 110.0,
+   "reason": null
+  },
+  "syn0001_L2": {
+   "level": 2,
+   "ok": true,
+   "sharpness": 7.088,
+   "contrast": 127.0,
+   "reason": null
+  },
+  "syn0001_L3": {
+   "level": 3,
+   "ok": false,
+   "sharpness": 1.163,
+   "contrast": 123.0,
+   "reason": "The photo is too blurred or too small to read the digits reliably."
+  },
+  "syn0003_L0": {
+   "level": 0,
+   "ok": true,
+   "sharpness": 153.405,
+   "contrast": 116.0,
+   "reason": null
+  },
+  "syn0003_L1": {
+   "level": 1,
+   "ok": true,
+   "sharpness": 121.312,
+   "contrast": 116.0,
+   "reason": null
+  },
+  "syn0003_L2": {
+   "level": 2,
+   "ok": true,
+   "sharpness": 5.663,
+   "contrast": 128.0,
+   "reason": null
+  },
+  "syn0003_L3": {
+   "level": 3,
+   "ok": false,
+   "sharpness": 2.802,
+   "contrast": 104.0,
+   "reason": "The photo is too blurred or too small to read the digits reliably."
+  },
+  "syn0005_L0": {
+   "level": 0,
+   "ok": true,
+   "sharpness": 168.925,
+   "contrast": 110.0,
+   "reason": null
+  },
+  "syn0005_L1": {
+   "level": 1,
+   "ok": true,
+   "sharpness": 164.584,
+   "contrast": 107.0,
+   "reason": null
+  },
+  "syn0005_L2": {
+   "level": 2,
+   "ok": true,
+   "sharpness": 8.722,
+   "contrast": 124.0,
+   "reason": null
+  },
+  "syn0005_L3": {
+   "level": 3,
+   "ok": false,
+   "sharpness": 1.474,
+   "contrast": 120.0,
+   "reason": "The photo is too blurred or too small to read the digits reliably."
+  },
+  "syn0007_L0": {
+   "level": 0,
+   "ok": true,
+   "sharpness": 166.085,
+   "contrast": 111.0,
+   "reason": null
+  },
+  "syn0007_L1": {
+   "level": 1,
+   "ok": true,
+   "sharpness": 152.674,
+   "contrast": 112.0,
+   "reason": null
+  },
+  "syn0007_L2": {
+   "level": 2,
+   "ok": true,
+   "sharpness": 5.548,
+   "contrast": 136.0,
+   "reason": null
+  },
+  "syn0007_L3": {
+   "level": 3,
+   "ok": false,
+   "sharpness": 1.463,
+   "contrast": 124.0,
+   "reason": "The photo is too blurred or too small to read the digits reliably."
+  },
+  "syn0009_L0": {
+   "level": 0,
+   "ok": true,
+   "sharpness": 99.426,
+   "contrast": 159.0,
+   "reason": null
+  },
+  "syn0009_L1": {
+   "level": 1,
+   "ok": true,
+   "sharpness": 92.931,
+   "contrast": 156.0,
+   "reason": null
+  },
+  "syn0009_L2": {
+   "level": 2,
+   "ok": true,
+   "sharpness": 4.979,
+   "contrast": 128.0,
+   "reason": null
+  },
+  "syn0009_L3": {
+   "level": 3,
+   "ok": false,
+   "sharpness": 1.193,
+   "contrast": 120.0,
+   "reason": "The photo is too blurred or too small to read the digits reliably."
+  },
+  "syn0011_L0": {
+   "level": 0,
+   "ok": true,
+   "sharpness": 141.779,
+   "contrast": 117.0,
+   "reason": null
+  },
+  "syn0011_L1": {
+   "level": 1,
+   "ok": true,
+   "sharpness": 121.133,
+   "contrast": 115.0,
+   "reason": null
+  },
+  "syn0011_L2": {
+   "level": 2,
+   "ok": true,
+   "sharpness": 5.768,
+   "contrast": 134.0,
+   "reason": null
+  },
+  "syn0011_L3": {
+   "level": 3,
+   "ok": false,
+   "sharpness": 1.646,
+   "contrast": 118.0,
+   "reason": "The photo is too blurred or too small to read the digits reliably."
+  },
+  "syn0013_L0": {
+   "level": 0,
+   "ok": true,
+   "sharpness": 100.134,
+   "contrast": 158.0,
+   "reason": null
+  },
+  "syn0013_L1": {
+   "level": 1,
+   "ok": true,
+   "sharpness": 91.066,
+   "contrast": 147.0,
+   "reason": null
+  },
+  "syn0013_L2": {
+   "level": 2,
+   "ok": true,
+   "sharpness": 5.112,
+   "contrast": 132.0,
+   "reason": null
+  },
+  "syn0013_L3": {
+   "level": 3,
+   "ok": false,
+   "sharpness": 1.013,
+   "contrast": 121.0,
+   "reason": "The photo is too blurred or too small to read the digits reliably."
+  },
+  "syn0015_L0": {
+   "level": 0,
+   "ok": true,
+   "sharpness": 99.712,
+   "contrast": 159.0,
+   "reason": null
+  },
+  "syn0015_L1": {
+   "level": 1,
+   "ok": true,
+   "sharpness": 96.737,
+   "contrast": 155.0,
+   "reason": null
+  },
+  "syn0015_L2": {
+   "level": 2,
+   "ok": true,
+   "sharpness": 4.857,
+   "contrast": 132.0,
+   "reason": null
+  },
+  "syn0015_L3": {
+   "level": 3,
+   "ok": false,
+   "sharpness": 1.814,
+   "contrast": 118.0,
+   "reason": "The photo is too blurred or too small to read the digits reliably."
+  },
+  "syn0017_L0": {
+   "level": 0,
+   "ok": true,
+   "sharpness": 101.053,
+   "contrast": 163.0,
+   "reason": null
+  },
+  "syn0017_L1": {
+   "level": 1,
+   "ok": true,
+   "sharpness": 87.634,
+   "contrast": 154.0,
+   "reason": null
+  },
+  "syn0017_L2": {
+   "level": 2,
+   "ok": true,
+   "sharpness": 5.203,
+   "contrast": 125.0,
+   "reason": null
+  },
+  "syn0017_L3": {
+   "level": 3,
+   "ok": false,
+   "sharpness": 1.303,
+   "contrast": 122.0,
+   "reason": "The photo is too blurred or too small to read the digits reliably."
+  },
+  "syn0019_L0": {
+   "level": 0,
+   "ok": true,
+   "sharpness": 173.443,
+   "contrast": 108.0,
+   "reason": null
+  },
+  "syn0019_L1": {
+   "level": 1,
+   "ok": true,
+   "sharpness": 156.489,
+   "contrast": 109.0,
+   "reason": null
+  },
+  "syn0019_L2": {
+   "level": 2,
+   "ok": true,
+   "sharpness": 4.445,
+   "contrast": 130.0,
+   "reason": null
+  },
+  "syn0019_L3": {
+   "level": 3,
+   "ok": false,
+   "sharpness": 1.78,
+   "contrast": 112.0,
+   "reason": "The photo is too blurred or too small to read the digits reliably."
+  },
+  "syn0021_L0": {
+   "level": 0,
+   "ok": true,
+   "sharpness": 170.587,
+   "contrast": 109.0,
+   "reason": null
+  },
+  "syn0021_L1": {
+   "level": 1,
+   "ok": true,
+   "sharpness": 126.598,
+   "contrast": 113.0,
+   "reason": null
+  },
+  "syn0021_L2": {
+   "level": 2,
+   "ok": true,
+   "sharpness": 8.08,
+   "contrast": 126.0,
+   "reason": null
+  },
+  "syn0021_L3": {
+   "level": 3,
+   "ok": false,
+   "sharpness": 2.737,
+   "contrast": 110.0,
+   "reason": "The photo is too blurred or too small to read the digits reliably."
+  },
+  "syn0023_L0": {
+   "level": 0,
+   "ok": true,
+   "sharpness": 89.424,
+   "contrast": 163.0,
+   "reason": null
+  },
+  "syn0023_L1": {
+   "level": 1,
+   "ok": true,
+   "sharpness": 81.468,
+   "contrast": 153.0,
+   "reason": null
+  },
+  "syn0023_L2": {
+   "level": 2,
+   "ok": true,
+   "sharpness": 4.28,
+   "contrast": 132.0,
+   "reason": null
+  },
+  "syn0023_L3": {
+   "level": 3,
+   "ok": false,
+   "sharpness": 0.997,
+   "contrast": 125.0,
+   "reason": "The photo is too blurred or too small to read the digits reliably."
+  },
+  "syn0025_L0": {
+   "level": 0,
+   "ok": true,
+   "sharpness": 86.419,
+   "contrast": 163.0,
+   "reason": null
+  },
+  "syn0025_L1": {
+   "level": 1,
+   "ok": true,
+   "sharpness": 82.733,
+   "contrast": 159.0,
+   "reason": null
+  },
+  "syn0025_L2": {
+   "level": 2,
+   "ok": true,
+   "sharpness": 3.151,
+   "contrast": 137.0,
+   "reason": null
+  },
+  "syn0025_L3": {
+   "level": 3,
+   "ok": false,
+   "sharpness": 0.808,
+   "contrast": 128.0,
+   "reason": "The photo is too blurred or too small to read the digits reliably."
+  },
+  "syn0027_L0": {
+   "level": 0,
+   "ok": true,
+   "sharpness": 99.518,
+   "contrast": 160.0,
+   "reason": null
+  },
+  "syn0027_L1": {
+   "level": 1,
+   "ok": true,
+   "sharpness": 89.844,
+   "contrast": 154.0,
+   "reason": null
+  },
+  "syn0027_L2": {
+   "level": 2,
+   "ok": true,
+   "sharpness": 6.368,
+   "contrast": 129.0,
+   "reason": null
+  },
+  "syn0027_L3": {
+   "level": 3,
+   "ok": false,
+   "sharpness": 2.427,
+   "contrast": 107.0,
+   "reason": "The photo is too blurred or too small to read the digits reliably."
+  },
+  "syn0029_L0": {
+   "level": 0,
+   "ok": true,
+   "sharpness": 178.151,
+   "contrast": 106.0,
+   "reason": null
+  },
+  "syn0029_L1": {
+   "level": 1,
+   "ok": true,
+   "sharpness": 157.31,
+   "contrast": 98.0,
+   "reason": null
+  },
+  "syn0029_L2": {
+   "level": 2,
+   "ok": true,
+   "sharpness": 7.181,
+   "contrast": 128.0,
+   "reason": null
+  },
+  "syn0029_L3": {
+   "level": 3,
+   "ok": true,
+   "sharpness": 3.644,
+   "contrast": 105.0,
+   "reason": null
+  },
+  "syn0031_L0": {
+   "level": 0,
+   "ok": true,
+   "sharpness": 90.76,
+   "contrast": 163.0,
+   "reason": null
+  },
+  "syn0031_L1": {
+   "level": 1,
+   "ok": true,
+   "sharpness": 91.527,
+   "contrast": 154.0,
+   "reason": null
+  },
+  "syn0031_L2": {
+   "level": 2,
+   "ok": true,
+   "sharpness": 3.618,
+   "contrast": 142.0,
+   "reason": null
+  },
+  "syn0031_L3": {
+   "level": 3,
+   "ok": false,
+   "sharpness": 1.006,
+   "contrast": 118.0,
+   "reason": "The photo is too blurred or too small to read the digits reliably."
+  },
+  "syn0033_L0": {
+   "level": 0,
+   "ok": true,
+   "sharpness": 90.73,
+   "contrast": 163.0,
+   "reason": null
+  },
+  "syn0033_L1": {
+   "level": 1,
+   "ok": true,
+   "sharpness": 77.741,
+   "contrast": 154.0,
+   "reason": null
+  },
+  "syn0033_L2": {
+   "level": 2,
+   "ok": true,
+   "sharpness": 6.603,
+   "contrast": 124.0,
+   "reason": null
+  },
+  "syn0033_L3": {
+   "level": 3,
+   "ok": false,
+   "sharpness": 1.048,
+   "contrast": 115.0,
+   "reason": "The photo is too blurred or too small to read the digits reliably."
+  },
+  "syn0035_L0": {
+   "level": 0,
+   "ok": true,
+   "sharpness": 141.598,
+   "contrast": 117.0,
+   "reason": null
+  },
+  "syn0035_L1": {
+   "level": 1,
+   "ok": true,
+   "sharpness": 130.161,
+   "contrast": 114.0,
+   "reason": null
+  },
+  "syn0035_L2": {
+   "level": 2,
+   "ok": true,
+   "sharpness": 5.233,
+   "contrast": 130.0,
+   "reason": null
+  },
+  "syn0035_L3": {
+   "level": 3,
+   "ok": false,
+   "sharpness": 1.89,
+   "contrast": 112.0,
+   "reason": "The photo is too blurred or too small to read the digits reliably."
+  },
+  "syn0037_L0": {
+   "level": 0,
+   "ok": true,
+   "sharpness": 90.535,
+   "contrast": 163.0,
+   "reason": null
+  },
+  "syn0037_L1": {
+   "level": 1,
+   "ok": true,
+   "sharpness": 79.51,
+   "contrast": 167.0,
+   "reason": null
+  },
+  "syn0037_L2": {
+   "level": 2,
+   "ok": true,
+   "sharpness": 3.531,
+   "contrast": 131.0,
+   "reason": null
+  },
+  "syn0037_L3": {
+   "level": 3,
+   "ok": false,
+   "sharpness": 1.27,
+   "contrast": 114.0,
+   "reason": "The photo is too blurred or too small to read the digits reliably."
+  },
+  "syn0039_L0": {
+   "level": 0,
+   "ok": true,
+   "sharpness": 169.012,
+   "contrast": 110.0,
+   "reason": null
+  },
+  "syn0039_L1": {
+   "level": 1,
+   "ok": true,
+   "sharpness": 173.1,
+   "contrast": 101.0,
+   "reason": null
+  },
+  "syn0039_L2": {
+   "level": 2,
+   "ok": true,
+   "sharpness": 5.712,
+   "contrast": 134.0,
+   "reason": null
+  },
+  "syn0039_L3": {
+   "level": 3,
+   "ok": false,
+   "sharpness": 1.955,
+   "contrast": 128.0,
+   "reason": "The photo is too blurred or too small to read the digits reliably."
+  },
+  "syn0041_L0": {
+   "level": 0,
+   "ok": true,
+   "sharpness": 169.426,
+   "contrast": 110.0,
+   "reason": null
+  },
+  "syn0041_L1": {
+   "level": 1,
+   "ok": true,
+   "sharpness": 196.842,
+   "contrast": 96.0,
+   "reason": null
+  },
+  "syn0041_L2": {
+   "level": 2,
+   "ok": true,
+   "sharpness": 6.017,
+   "contrast": 139.0,
+   "reason": null
+  },
+  "syn0041_L3": {
+   "level": 3,
+   "ok": false,
+   "sharpness": 1.414,
+   "contrast": 123.0,
+   "reason": "The photo is too blurred or too small to read the digits reliably."
+  },
+  "syn0043_L0": {
+   "level": 0,
+   "ok": true,
+   "sharpness": 170.54,
+   "contrast": 109.0,
+   "reason": null
+  },
+  "syn0043_L1": {
+   "level": 1,
+   "ok": true,
+   "sharpness": 160.297,
+   "contrast": 102.0,
+   "reason": null
+  },
+  "syn0043_L2": {
+   "level": 2,
+   "ok": true,
+   "sharpness": 5.857,
+   "contrast": 137.0,
+   "reason": null
+  },
+  "syn0043_L3": {
+   "level": 3,
+   "ok": false,
+   "sharpness": 1.84,
+   "contrast": 129.0,
+   "reason": "The photo is too blurred or too small to read the digits reliably."
+  },
+  "syn0045_L0": {
+   "level": 0,
+   "ok": true,
+   "sharpness": 89.573,
+   "contrast": 163.0,
+   "reason": null
+  },
+  "syn0045_L1": {
+   "level": 1,
+   "ok": true,
+   "sharpness": 70.965,
+   "contrast": 162.0,
+   "reason": null
+  },
+  "syn0045_L2": {
+   "level": 2,
+   "ok": true,
+   "sharpness": 3.674,
+   "contrast": 131.0,
+   "reason": null
+  },
+  "syn0045_L3": {
+   "level": 3,
+   "ok": false,
+   "sharpness": 1.015,
+   "contrast": 127.0,
+   "reason": "The photo is too blurred or too small to read the digits reliably."
+  },
+  "syn0047_L0": {
+   "level": 0,
+   "ok": true,
+   "sharpness": 180.31,
+   "contrast": 112.0,
+   "reason": null
+  },
+  "syn0047_L1": {
+   "level": 1,
+   "ok": true,
+   "sharpness": 177.7,
+   "contrast": 105.0,
+   "reason": null
+  },
+  "syn0047_L2": {
+   "level": 2,
+   "ok": true,
+   "sharpness": 8.452,
+   "contrast": 125.0,
+   "reason": null
+  },
+  "syn0047_L3": {
+   "level": 3,
+   "ok": false,
+   "sharpness": 1.647,
+   "contrast": 111.0,
+   "reason": "The photo is too blurred or too small to read the digits reliably."
+  },
+  "syn0049_L0": {
+   "level": 0,
+   "ok": true,
+   "sharpness": 157.772,
+   "contrast": 114.0,
+   "reason": null
+  },
+  "syn0049_L1": {
+   "level": 1,
+   "ok": true,
+   "sharpness": 189.752,
+   "contrast": 98.0,
+   "reason": null
+  },
+  "syn0049_L2": {
+   "level": 2,
+   "ok": true,
+   "sharpness": 5.356,
+   "contrast": 134.0,
+   "reason": null
+  },
+  "syn0049_L3": {
+   "level": 3,
+   "ok": false,
+   "sharpness": 2.53,
+   "contrast": 112.0,
+   "reason": "The photo is too blurred or too small to read the digits reliably."
+  }
+ }
+}

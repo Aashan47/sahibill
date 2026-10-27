@@ -1,0 +1,708 @@
+{
+ "summary": {
+  "all": {
+   "raw": {
+    "photos": 12,
+    "fields": 248,
+    "right": 236,
+    "wrong": 3,
+    "unread": 9
+   },
+   "after_consistency": {
+    "photos": 12,
+    "fields": 248,
+    "right": 232,
+    "wrong": 3,
+    "unread": 13
+   }
+  },
+  "closeup": {
+   "raw": {
+    "photos": 6,
+    "fields": 124,
+    "right": 116,
+    "wrong": 2,
+    "unread": 6
+   },
+   "after_consistency": {
+    "photos": 6,
+    "fields": 124,
+    "right": 114,
+    "wrong": 2,
+    "unread": 8
+   }
+  },
+  "casual": {
+   "raw": {
+    "photos": 6,
+    "fields": 124,
+    "right": 120,
+    "wrong": 1,
+    "unread": 3
+   },
+   "after_consistency": {
+    "photos": 6,
+    "fields": 124,
+    "right": 118,
+    "wrong": 1,
+    "unread": 5
+   }
+  },
+  "usd_this_run": 0.162
+ },
+ "rows": [
+  {
+   "photo": "Apr-Casual",
+   "month": "Apr",
+   "kind": "casual",
+   "turned": null,
+   "raw": {
+    "fields": 24,
+    "right": 24,
+    "wrong": [],
+    "unread": []
+   },
+   "after_consistency": {
+    "fields": 24,
+    "right": 24,
+    "wrong": [],
+    "unread": []
+   },
+   "consistency_passed": [
+    "readings",
+    "dates",
+    "charges",
+    "summary"
+   ],
+   "held": [],
+   "verdict": [
+    [
+     "2",
+     "problem_found"
+    ],
+    [
+     "1",
+     "cannot_be_determined"
+    ],
+    [
+     "10B",
+     "cannot_be_determined"
+    ],
+    [
+     "9",
+     "cannot_be_determined"
+    ],
+    [
+     "10A",
+     "looks_right"
+    ],
+    [
+     "3",
+     "looks_right"
+    ]
+   ]
+  },
+  {
+   "photo": "Apr-closeup",
+   "month": "Apr",
+   "kind": "closeup",
+   "turned": null,
+   "raw": {
+    "fields": 24,
+    "right": 24,
+    "wrong": [],
+    "unread": []
+   },
+   "after_consistency": {
+    "fields": 24,
+    "right": 24,
+    "wrong": [],
+    "unread": []
+   },
+   "consistency_passed": [
+    "readings",
+    "dates",
+    "charges",
+    "summary"
+   ],
+   "held": [],
+   "verdict": [
+    [
+     "2",
+     "problem_found"
+    ],
+    [
+     "1",
+     "cannot_be_determined"
+    ],
+    [
+     "10B",
+     "cannot_be_determined"
+    ],
+    [
+     "9",
+     "cannot_be_determined"
+    ],
+    [
+     "10A",
+     "looks_right"
+    ],
+    [
+     "3",
+     "looks_right"
+    ]
+   ]
+  },
+  {
+   "photo": "Aug-Casual",
+   "month": "Aug",
+   "kind": "casual",
+   "turned": null,
+   "raw": {
+    "fields": 21,
+    "right": 20,
+    "wrong": [
+     "fpa_line.reference_month"
+    ],
+    "unread": []
+   },
+   "after_consistency": {
+    "fields": 21,
+    "right": 20,
+    "wrong": [
+     "fpa_line.reference_month"
+    ],
+    "unread": []
+   },
+   "consistency_passed": [
+    "readings",
+    "dates",
+    "summary"
+   ],
+   "held": [],
+   "verdict": [
+    [
+     "2",
+     "problem_found"
+    ],
+    [
+     "1",
+     "cannot_be_determined"
+    ],
+    [
+     "10B",
+     "cannot_be_determined"
+    ],
+    [
+     "10A",
+     "looks_right"
+    ],
+    [
+     "3",
+     "looks_right"
+    ],
+    [
+     "9",
+     "looks_right"
+    ]
+   ]
+  },
+  {
+   "photo": "Aug-closeup",
+   "month": "Aug",
+   "kind": "closeup",
+   "turned": null,
+   "raw": {
+    "fields": 21,
+    "right": 21,
+    "wrong": [],
+    "unread": []
+   },
+   "after_consistency": {
+    "fields": 21,
+    "right": 21,
+    "wrong": [],
+    "unread": []
+   },
+   "consistency_passed": [
+    "readings",
+    "dates",
+    "summary"
+   ],
+   "held": [],
+   "verdict": [
+    [
+     "2",
+     "problem_found"
+    ],
+    [
+     "1",
+     "cannot_be_determined"
+    ],
+    [
+     "10B",
+     "cannot_be_determined"
+    ],
+    [
+     "10A",
+     "looks_right"
+    ],
+    [
+     "3",
+     "looks_right"
+    ],
+    [
+     "9",
+     "looks_right"
+    ]
+   ]
+  },
+  {
+   "photo": "Jul-Casual",
+   "month": "Jul",
+   "kind": "casual",
+   "turned": null,
+   "raw": {
+    "fields": 21,
+    "right": 20,
+    "wrong": [],
+    "unread": [
+     "fpa_line.reference_month"
+    ]
+   },
+   "after_consistency": {
+    "fields": 21,
+    "right": 20,
+    "wrong": [],
+    "unread": [
+     "fpa_line.reference_month"
+    ]
+   },
+   "consistency_passed": [
+    "readings",
+    "dates",
+    "summary"
+   ],
+   "held": [],
+   "verdict": [
+    [
+     "2",
+     "problem_found"
+    ],
+    [
+     "1",
+     "cannot_be_determined"
+    ],
+    [
+     "10B",
+     "cannot_be_determined"
+    ],
+    [
+     "10A",
+     "looks_right"
+    ],
+    [
+     "3",
+     "looks_right"
+    ],
+    [
+     "9",
+     "looks_right"
+    ]
+   ]
+  },
+  {
+   "photo": "Jul-closeup",
+   "month": "Jul",
+   "kind": "closeup",
+   "turned": null,
+   "raw": {
+    "fields": 21,
+    "right": 20,
+    "wrong": [
+     "fpa_line.reference_month"
+    ],
+    "unread": []
+   },
+   "after_consistency": {
+    "fields": 21,
+    "right": 20,
+    "wrong": [
+     "fpa_line.reference_month"
+    ],
+    "unread": []
+   },
+   "consistency_passed": [
+    "readings",
+    "dates",
+    "summary"
+   ],
+   "held": [],
+   "verdict": [
+    [
+     "2",
+     "problem_found"
+    ],
+    [
+     "1",
+     "cannot_be_determined"
+    ],
+    [
+     "10B",
+     "cannot_be_determined"
+    ],
+    [
+     "10A",
+     "looks_right"
+    ],
+    [
+     "3",
+     "looks_right"
+    ],
+    [
+     "9",
+     "looks_right"
+    ]
+   ]
+  },
+  {
+   "photo": "Jun-Casual",
+   "month": "Jun",
+   "kind": "casual",
+   "turned": null,
+   "raw": {
+    "fields": 19,
+    "right": 17,
+    "wrong": [],
+    "unread": [
+     "fpa_line.reference_month",
+     "fpa_line.units"
+    ]
+   },
+   "after_consistency": {
+    "fields": 19,
+    "right": 17,
+    "wrong": [],
+    "unread": [
+     "fpa_line.reference_month",
+     "fpa_line.units"
+    ]
+   },
+   "consistency_passed": [
+    "readings",
+    "dates",
+    "summary"
+   ],
+   "held": [],
+   "verdict": [
+    [
+     "2",
+     "problem_found"
+    ],
+    [
+     "1",
+     "cannot_be_determined"
+    ],
+    [
+     "10B",
+     "cannot_be_determined"
+    ],
+    [
+     "9",
+     "cannot_be_determined"
+    ],
+    [
+     "10A",
+     "looks_right"
+    ],
+    [
+     "3",
+     "looks_right"
+    ]
+   ]
+  },
+  {
+   "photo": "Jun-closeup",
+   "month": "Jun",
+   "kind": "closeup",
+   "turned": null,
+   "raw": {
+    "fields": 19,
+    "right": 16,
+    "wrong": [
+     "pro_rata"
+    ],
+    "unread": [
+     "fpa_line.reference_month",
+     "fpa_line.units"
+    ]
+   },
+   "after_consistency": {
+    "fields": 19,
+    "right": 16,
+    "wrong": [
+     "pro_rata"
+    ],
+    "unread": [
+     "fpa_line.reference_month",
+     "fpa_line.units"
+    ]
+   },
+   "consistency_passed": [
+    "readings",
+    "dates",
+    "summary"
+   ],
+   "held": [],
+   "verdict": [
+    [
+     "2",
+     "problem_found"
+    ],
+    [
+     "1",
+     "cannot_be_determined"
+    ],
+    [
+     "10B",
+     "cannot_be_determined"
+    ],
+    [
+     "9",
+     "cannot_be_determined"
+    ],
+    [
+     "10A",
+     "looks_right"
+    ],
+    [
+     "3",
+     "looks_right"
+    ]
+   ]
+  },
+  {
+   "photo": "May-Casual",
+   "month": "May",
+   "kind": "casual",
+   "turned": null,
+   "raw": {
+    "fields": 18,
+    "right": 18,
+    "wrong": [],
+    "unread": []
+   },
+   "after_consistency": {
+    "fields": 18,
+    "right": 16,
+    "wrong": [],
+    "unread": [
+     "reading_date",
+     "issue_date"
+    ]
+   },
+   "consistency_passed": [
+    "readings",
+    "dates",
+    "charges"
+   ],
+   "held": [
+    "issue_date",
+    "reading_date"
+   ],
+   "verdict": [
+    [
+     "2",
+     "problem_found"
+    ],
+    [
+     "1",
+     "cannot_be_determined"
+    ],
+    [
+     "10A",
+     "cannot_be_determined"
+    ],
+    [
+     "10B",
+     "cannot_be_determined"
+    ],
+    [
+     "9",
+     "cannot_be_determined"
+    ],
+    [
+     "3",
+     "looks_right"
+    ]
+   ]
+  },
+  {
+   "photo": "May-closeup",
+   "month": "May",
+   "kind": "closeup",
+   "turned": null,
+   "raw": {
+    "fields": 18,
+    "right": 17,
+    "wrong": [],
+    "unread": [
+     "tariff"
+    ]
+   },
+   "after_consistency": {
+    "fields": 18,
+    "right": 15,
+    "wrong": [],
+    "unread": [
+     "tariff",
+     "reading_date",
+     "issue_date"
+    ]
+   },
+   "consistency_passed": [
+    "readings",
+    "dates",
+    "charges"
+   ],
+   "held": [
+    "issue_date",
+    "reading_date"
+   ],
+   "verdict": [
+    [
+     "2",
+     "problem_found"
+    ],
+    [
+     "1",
+     "cannot_be_determined"
+    ],
+    [
+     "10A",
+     "cannot_be_determined"
+    ],
+    [
+     "10B",
+     "cannot_be_determined"
+    ],
+    [
+     "9",
+     "cannot_be_determined"
+    ],
+    [
+     "3",
+     "looks_right"
+    ]
+   ]
+  },
+  {
+   "photo": "Sep-Casual",
+   "month": "Sep",
+   "kind": "casual",
+   "turned": null,
+   "raw": {
+    "fields": 21,
+    "right": 21,
+    "wrong": [],
+    "unread": []
+   },
+   "after_consistency": {
+    "fields": 21,
+    "right": 21,
+    "wrong": [],
+    "unread": []
+   },
+   "consistency_passed": [
+    "readings",
+    "dates",
+    "summary"
+   ],
+   "held": [],
+   "verdict": [
+    [
+     "2",
+     "problem_found"
+    ],
+    [
+     "1",
+     "cannot_be_determined"
+    ],
+    [
+     "10B",
+     "cannot_be_determined"
+    ],
+    [
+     "10A",
+     "looks_right"
+    ],
+    [
+     "3",
+     "looks_right"
+    ],
+    [
+     "9",
+     "looks_right"
+    ]
+   ]
+  },
+  {
+   "photo": "Sep-closeup",
+   "month": "Sep",
+   "kind": "closeup",
+   "turned": null,
+   "raw": {
+    "fields": 21,
+    "right": 18,
+    "wrong": [],
+    "unread": [
+     "fpa_line.reference_month",
+     "fpa_line.units",
+     "fpa_line.rate"
+    ]
+   },
+   "after_consistency": {
+    "fields": 21,
+    "right": 18,
+    "wrong": [],
+    "unread": [
+     "fpa_line.reference_month",
+     "fpa_line.units",
+     "fpa_line.rate"
+    ]
+   },
+   "consistency_passed": [
+    "readings",
+    "dates",
+    "summary"
+   ],
+   "held": [],
+   "verdict": [
+    [
+     "2",
+     "problem_found"
+    ],
+    [
+     "1",
+     "cannot_be_determined"
+    ],
+    [
+     "10B",
+     "cannot_be_determined"
+    ],
+    [
+     "9",
+     "cannot_be_determined"
+    ],
+    [
+     "10A",
+     "looks_right"
+    ],
+    [
+     "3",
+     "looks_right"
+    ]
+   ]
+  }
+ ]
+}
