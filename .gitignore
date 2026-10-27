@@ -1,0 +1,18 @@
+# never committed
+.env
+*.env
+data-local/
+real-bills/
+cache/
+*.pdf
+__pycache__/
+.venv/
+.pytest_cache/
+.DS_Store
+eval-data/
+*.egg-info/
+cache/
+uploads/
+frontend/node_modules/
+web/dist/
+video/

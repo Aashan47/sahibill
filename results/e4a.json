@@ -1,0 +1,2140 @@
+{
+ "summary": {
+  "scored_all": 64,
+  "matched_all": 32,
+  "match_rate_all": 0.5,
+  "scored_strict": 42,
+  "matched_strict": 20,
+  "match_rate_strict": 0.476,
+  "prediction": "at least 70% matched, judged on the strict set",
+  "prediction_met": false,
+  "unmatched_with_missing_inputs": 32,
+  "specificity_decisions": 8,
+  "false_alarms": 1
+ },
+ "rows": [
+  {
+   "stem": "FESCO_0007",
+   "nepra": [
+    "none_found"
+   ],
+   "engine": [],
+   "missing": [
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "set": "specificity",
+   "false_alarm": false
+  },
+  {
+   "stem": "FESCO_0046",
+   "nepra": [
+    "excessive_reading_vs_history",
+    "snapshot_missing_or_mismatch"
+   ],
+   "engine": [
+    "snapshot_missing_or_mismatch"
+   ],
+   "missing": [
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "status or rate applied on the bill"
+   ],
+   "leaky": true,
+   "set": "scored",
+   "match": true
+  },
+  {
+   "stem": "FESCO_0059",
+   "nepra": [
+    "detection_load_or_period_exceeds_limits",
+    "detection_not_justified_by_history"
+   ],
+   "engine": [],
+   "missing": [
+    "issue date",
+    "load",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "set": "scored",
+   "match": false
+  },
+  {
+   "stem": "FESCO_0061",
+   "nepra": [
+    "other"
+   ],
+   "engine": [],
+   "missing": [
+    "a display-wash defect (4.3.2(d) does not cover this defect)",
+    "billing month",
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": true,
+   "set": "not_scored"
+  },
+  {
+   "stem": "FESCO_0066",
+   "nepra": [
+    "other"
+   ],
+   "engine": [],
+   "missing": [
+    "billing month",
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "set": "not_scored"
+  },
+  {
+   "stem": "FESCO_0079",
+   "nepra": [
+    "detection_load_or_period_exceeds_limits",
+    "detection_procedure_not_followed"
+   ],
+   "engine": [
+    "detection_procedure_not_followed"
+   ],
+   "missing": [
+    "issue date",
+    "load",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "set": "scored",
+   "match": false
+  },
+  {
+   "stem": "FESCO_0089",
+   "nepra": [
+    "average_billing_wrong_basis"
+   ],
+   "engine": [
+    "average_billing_wrong_basis"
+   ],
+   "missing": [
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot",
+    "status or rate applied on the bill"
+   ],
+   "leaky": false,
+   "set": "scored",
+   "match": true
+  },
+  {
+   "stem": "FESCO_0127",
+   "nepra": [
+    "detection_load_or_period_exceeds_limits"
+   ],
+   "engine": [
+    "detection_procedure_not_followed"
+   ],
+   "missing": [
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "set": "not_scored"
+  },
+  {
+   "stem": "FESCO_0134",
+   "nepra": [
+    "detection_procedure_not_followed"
+   ],
+   "engine": [
+    "detection_procedure_not_followed"
+   ],
+   "missing": [
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "set": "not_scored"
+  },
+  {
+   "stem": "FESCO_0138",
+   "nepra": [
+    "skipped_charges_beyond_recovery_limit"
+   ],
+   "engine": [
+    "skipped_charges_beyond_recovery_limit"
+   ],
+   "missing": [
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "set": "scored",
+   "match": true
+  },
+  {
+   "stem": "FESCO_0146",
+   "nepra": [
+    "detection_load_or_period_exceeds_limits",
+    "detection_procedure_not_followed"
+   ],
+   "engine": [
+    "detection_procedure_not_followed"
+   ],
+   "missing": [
+    "CEO or committee approval (never printed on a bill)",
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot",
+    "status or rate applied on the bill"
+   ],
+   "leaky": false,
+   "set": "scored",
+   "match": false
+  },
+  {
+   "stem": "GEPCO_0213",
+   "nepra": [
+    "none_found"
+   ],
+   "engine": [],
+   "missing": [
+    "billing month",
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "set": "specificity",
+   "false_alarm": false
+  },
+  {
+   "stem": "GEPCO_0228",
+   "nepra": [
+    "other"
+   ],
+   "engine": [],
+   "missing": [
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "set": "not_scored"
+  },
+  {
+   "stem": "GEPCO_0231",
+   "nepra": [
+    "other"
+   ],
+   "engine": [],
+   "missing": [
+    "billing month",
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "set": "not_scored"
+  },
+  {
+   "stem": "GEPCO_0235",
+   "nepra": [
+    "skipped_charges_beyond_recovery_limit"
+   ],
+   "engine": [
+    "skipped_charges_beyond_recovery_limit"
+   ],
+   "missing": [
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": true,
+   "set": "scored",
+   "match": true
+  },
+  {
+   "stem": "GEPCO_0237",
+   "nepra": [
+    "detection_units_formula_error"
+   ],
+   "engine": [],
+   "missing": [
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": true,
+   "set": "scored",
+   "match": false
+  },
+  {
+   "stem": "HESCO_0255",
+   "nepra": [
+    "billing_disconnected_or_idle_premises"
+   ],
+   "engine": [],
+   "missing": [
+    "billing month",
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "set": "not_scored"
+  },
+  {
+   "stem": "HESCO_0268",
+   "nepra": [
+    "detection_not_justified_by_history",
+    "detection_procedure_not_followed",
+    "meter_defect_not_rectified_in_time",
+    "retrieval_charge_beyond_time_limit"
+   ],
+   "engine": [],
+   "missing": [
+    "a display-wash defect (4.3.2(d) does not cover this defect)",
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot",
+    "status or rate applied on the bill"
+   ],
+   "leaky": true,
+   "set": "scored",
+   "match": false
+  },
+  {
+   "stem": "IESCO_0282",
+   "nepra": [
+    "average_billing_beyond_limit",
+    "excessive_reading_vs_history"
+   ],
+   "engine": [
+    "accumulated_units_charged_at_once",
+    "average_billing_beyond_limit"
+   ],
+   "missing": [
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot",
+    "status or rate applied on the bill"
+   ],
+   "leaky": false,
+   "set": "scored",
+   "match": true
+  },
+  {
+   "stem": "IESCO_0316",
+   "nepra": [
+    "due_date_too_short"
+   ],
+   "engine": [],
+   "missing": [
+    "delivery date (not printed on bills)",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "set": "scored",
+   "match": false
+  },
+  {
+   "stem": "IESCO_0317",
+   "nepra": [
+    "none_found"
+   ],
+   "engine": [],
+   "missing": [
+    "billing month",
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "set": "specificity",
+   "false_alarm": false
+  },
+  {
+   "stem": "IESCO_0320",
+   "nepra": [
+    "other"
+   ],
+   "engine": [],
+   "missing": [
+    "billing month",
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "set": "not_scored"
+  },
+  {
+   "stem": "IESCO_0326",
+   "nepra": [
+    "excessive_reading_vs_history"
+   ],
+   "engine": [],
+   "missing": [
+    "billing month",
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "set": "not_scored"
+  },
+  {
+   "stem": "IESCO_0329",
+   "nepra": [
+    "skipped_charges_beyond_recovery_limit"
+   ],
+   "engine": [
+    "skipped_charges_beyond_recovery_limit"
+   ],
+   "missing": [
+    "billing month",
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "set": "scored",
+   "match": true
+  },
+  {
+   "stem": "IESCO_0330",
+   "nepra": [
+    "retrieval_charge_beyond_time_limit"
+   ],
+   "engine": [],
+   "missing": [
+    "a display-wash defect (4.3.2(d) does not cover this defect)",
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "set": "scored",
+   "match": false
+  },
+  {
+   "stem": "IESCO_0342",
+   "nepra": [
+    "skipped_charges_beyond_recovery_limit"
+   ],
+   "engine": [
+    "skipped_charges_beyond_recovery_limit"
+   ],
+   "missing": [
+    "billing month",
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "set": "scored",
+   "match": true
+  },
+  {
+   "stem": "IESCO_0357",
+   "nepra": [
+    "detection_load_or_period_exceeds_limits",
+    "detection_procedure_not_followed"
+   ],
+   "engine": [
+    "detection_procedure_not_followed"
+   ],
+   "missing": [
+    "billing month",
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "set": "scored",
+   "match": false
+  },
+  {
+   "stem": "K-Electric_0381",
+   "nepra": [
+    "average_billing_wrong_basis",
+    "detection_procedure_not_followed"
+   ],
+   "engine": [],
+   "missing": [
+    "billing month",
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "set": "not_scored"
+  },
+  {
+   "stem": "K-Electric_0389",
+   "nepra": [
+    "none_found"
+   ],
+   "engine": [],
+   "missing": [
+    "issue date",
+    "rate table for this billing month",
+    "snapshot"
+   ],
+   "leaky": false,
+   "set": "specificity",
+   "false_alarm": false
+  },
+  {
+   "stem": "K-Electric_0394",
+   "nepra": [
+    "detection_not_justified_by_history",
+    "detection_procedure_not_followed"
+   ],
+   "engine": [
+    "detection_procedure_not_followed"
+   ],
+   "missing": [
+    "billing month",
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "set": "scored",
+   "match": false
+  },
+  {
+   "stem": "K-Electric_0427",
+   "nepra": [
+    "detection_load_or_period_exceeds_limits"
+   ],
+   "engine": [],
+   "missing": [
+    "CEO or committee approval (never printed on a bill)",
+    "billing month",
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "set": "scored",
+   "match": false
+  },
+  {
+   "stem": "K-Electric_0441",
+   "nepra": [
+    "average_billing_wrong_basis"
+   ],
+   "engine": [],
+   "missing": [
+    "billing month",
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "set": "scored",
+   "match": false
+  },
+  {
+   "stem": "K-Electric_0447",
+   "nepra": [
+    "detection_load_or_period_exceeds_limits",
+    "detection_procedure_not_followed"
+   ],
+   "engine": [],
+   "missing": [
+    "CEO or committee approval (never printed on a bill)",
+    "billing month",
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "set": "scored",
+   "match": false
+  },
+  {
+   "stem": "K-Electric_0470",
+   "nepra": [
+    "detection_load_or_period_exceeds_limits"
+   ],
+   "engine": [
+    "detection_load_or_period_exceeds_limits"
+   ],
+   "missing": [
+    "billing month",
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": true,
+   "set": "scored",
+   "match": true
+  },
+  {
+   "stem": "K-Electric_0483",
+   "nepra": [
+    "other"
+   ],
+   "engine": [],
+   "missing": [
+    "billing month",
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "set": "not_scored"
+  },
+  {
+   "stem": "K-Electric_0546",
+   "nepra": [
+    "other"
+   ],
+   "engine": [],
+   "missing": [
+    "billing month",
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "set": "not_scored"
+  },
+  {
+   "stem": "K-Electric_0550",
+   "nepra": [
+    "detection_procedure_not_followed",
+    "wrong_tariff_category"
+   ],
+   "engine": [
+    "detection_procedure_not_followed"
+   ],
+   "missing": [
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "set": "not_scored"
+  },
+  {
+   "stem": "K-Electric_0572",
+   "nepra": [
+    "detection_not_justified_by_history",
+    "detection_procedure_not_followed"
+   ],
+   "engine": [
+    "detection_procedure_not_followed"
+   ],
+   "missing": [
+    "CEO or committee approval (never printed on a bill)",
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": true,
+   "set": "scored",
+   "match": false
+  },
+  {
+   "stem": "K-Electric_0597",
+   "nepra": [
+    "billing_disconnected_or_idle_premises"
+   ],
+   "engine": [],
+   "missing": [
+    "billing month",
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "set": "not_scored"
+  },
+  {
+   "stem": "K-Electric_0619",
+   "nepra": [
+    "average_billing_wrong_basis",
+    "billing_disconnected_or_idle_premises"
+   ],
+   "engine": [],
+   "missing": [
+    "billing month",
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "set": "scored",
+   "match": false
+  },
+  {
+   "stem": "K-Electric_0628",
+   "nepra": [
+    "detection_load_or_period_exceeds_limits",
+    "detection_procedure_not_followed"
+   ],
+   "engine": [
+    "detection_procedure_not_followed"
+   ],
+   "missing": [
+    "billing month",
+    "detection reasons (direct theft or tampering)",
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "set": "scored",
+   "match": false
+  },
+  {
+   "stem": "K-Electric_0681",
+   "nepra": [
+    "detection_not_justified_by_history",
+    "detection_procedure_not_followed"
+   ],
+   "engine": [
+    "detection_procedure_not_followed",
+    "detection_units_formula_error"
+   ],
+   "missing": [
+    "billing month",
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "set": "scored",
+   "match": false
+  },
+  {
+   "stem": "K-Electric_0685",
+   "nepra": [
+    "detection_not_justified_by_history",
+    "detection_procedure_not_followed"
+   ],
+   "engine": [
+    "detection_load_or_period_exceeds_limits"
+   ],
+   "missing": [
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": true,
+   "set": "scored",
+   "match": false
+  },
+  {
+   "stem": "K-Electric_0687",
+   "nepra": [
+    "average_billing_wrong_basis",
+    "detection_procedure_not_followed"
+   ],
+   "engine": [
+    "detection_procedure_not_followed"
+   ],
+   "missing": [
+    "billing month",
+    "issue date",
+    "load",
+    "previous reading date (not a required bill field)",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": true,
+   "set": "scored",
+   "match": false
+  },
+  {
+   "stem": "K-Electric_0696",
+   "nepra": [
+    "detection_procedure_not_followed"
+   ],
+   "engine": [
+    "detection_units_formula_error"
+   ],
+   "missing": [
+    "CEO or committee approval (never printed on a bill)",
+    "billing month",
+    "consumption of the comparison months",
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "set": "not_scored"
+  },
+  {
+   "stem": "K-Electric_0699",
+   "nepra": [
+    "detection_procedure_not_followed",
+    "detection_units_formula_error"
+   ],
+   "engine": [],
+   "missing": [
+    "consumption of the comparison months",
+    "issue date",
+    "load",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "set": "scored",
+   "match": false
+  },
+  {
+   "stem": "LESCO_0734",
+   "nepra": [
+    "detection_not_justified_by_history",
+    "detection_procedure_not_followed"
+   ],
+   "engine": [
+    "detection_not_justified_by_history",
+    "detection_procedure_not_followed"
+   ],
+   "missing": [
+    "issue date",
+    "load",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "set": "scored",
+   "match": true
+  },
+  {
+   "stem": "LESCO_0743",
+   "nepra": [
+    "detection_not_justified_by_history",
+    "retrieval_charge_beyond_time_limit"
+   ],
+   "engine": [
+    "detection_procedure_not_followed",
+    "retrieval_charge_beyond_time_limit"
+   ],
+   "missing": [
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": true,
+   "set": "scored",
+   "match": true
+  },
+  {
+   "stem": "LESCO_0765",
+   "nepra": [
+    "other"
+   ],
+   "engine": [],
+   "missing": [
+    "billing month",
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "set": "not_scored"
+  },
+  {
+   "stem": "LESCO_0782",
+   "nepra": [
+    "reading_data_entry_error",
+    "snapshot_missing_or_mismatch"
+   ],
+   "engine": [],
+   "missing": [
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "set": "scored",
+   "match": false
+  },
+  {
+   "stem": "LESCO_0783",
+   "nepra": [
+    "snapshot_missing_or_mismatch"
+   ],
+   "engine": [
+    "snapshot_missing_or_mismatch"
+   ],
+   "missing": [
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "units"
+   ],
+   "leaky": false,
+   "set": "scored",
+   "match": true
+  },
+  {
+   "stem": "LESCO_0789",
+   "nepra": [
+    "snapshot_missing_or_mismatch"
+   ],
+   "engine": [
+    "snapshot_missing_or_mismatch"
+   ],
+   "missing": [
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "units"
+   ],
+   "leaky": false,
+   "set": "scored",
+   "match": true
+  },
+  {
+   "stem": "LESCO_0790",
+   "nepra": [
+    "reading_data_entry_error"
+   ],
+   "engine": [],
+   "missing": [
+    "billing month",
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "set": "not_scored"
+  },
+  {
+   "stem": "LESCO_0803",
+   "nepra": [
+    "other"
+   ],
+   "engine": [],
+   "missing": [
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "set": "not_scored"
+  },
+  {
+   "stem": "LESCO_0819",
+   "nepra": [
+    "excessive_reading_vs_history",
+    "snapshot_missing_or_mismatch"
+   ],
+   "engine": [
+    "snapshot_missing_or_mismatch"
+   ],
+   "missing": [
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "units"
+   ],
+   "leaky": false,
+   "set": "scored",
+   "match": true
+  },
+  {
+   "stem": "LESCO_0821",
+   "nepra": [
+    "reading_data_entry_error",
+    "snapshot_missing_or_mismatch"
+   ],
+   "engine": [
+    "snapshot_missing_or_mismatch"
+   ],
+   "missing": [
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "units"
+   ],
+   "leaky": false,
+   "set": "scored",
+   "match": true
+  },
+  {
+   "stem": "LESCO_0831",
+   "nepra": [
+    "detection_procedure_not_followed"
+   ],
+   "engine": [
+    "detection_procedure_not_followed"
+   ],
+   "missing": [
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": true,
+   "set": "not_scored"
+  },
+  {
+   "stem": "LESCO_0842",
+   "nepra": [
+    "reading_data_entry_error",
+    "snapshot_missing_or_mismatch"
+   ],
+   "engine": [
+    "snapshot_missing_or_mismatch"
+   ],
+   "missing": [
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "units"
+   ],
+   "leaky": false,
+   "set": "scored",
+   "match": true
+  },
+  {
+   "stem": "LESCO_0845",
+   "nepra": [
+    "detection_procedure_not_followed"
+   ],
+   "engine": [
+    "detection_procedure_not_followed"
+   ],
+   "missing": [
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "set": "not_scored"
+  },
+  {
+   "stem": "LESCO_0847",
+   "nepra": [
+    "average_billing_beyond_limit",
+    "snapshot_missing_or_mismatch"
+   ],
+   "engine": [
+    "snapshot_missing_or_mismatch"
+   ],
+   "missing": [
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "units"
+   ],
+   "leaky": false,
+   "set": "scored",
+   "match": true
+  },
+  {
+   "stem": "LESCO_0848",
+   "nepra": [
+    "reading_data_entry_error",
+    "snapshot_missing_or_mismatch"
+   ],
+   "engine": [
+    "snapshot_missing_or_mismatch"
+   ],
+   "missing": [
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "units"
+   ],
+   "leaky": false,
+   "set": "scored",
+   "match": true
+  },
+  {
+   "stem": "LESCO_0861",
+   "nepra": [
+    "snapshot_missing_or_mismatch"
+   ],
+   "engine": [
+    "snapshot_missing_or_mismatch"
+   ],
+   "missing": [
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "units"
+   ],
+   "leaky": false,
+   "set": "scored",
+   "match": true
+  },
+  {
+   "stem": "LESCO_0883",
+   "nepra": [
+    "excessive_reading_vs_history",
+    "retrieval_charge_beyond_time_limit"
+   ],
+   "engine": [
+    "retrieval_charge_beyond_time_limit"
+   ],
+   "missing": [
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "set": "scored",
+   "match": true
+  },
+  {
+   "stem": "LESCO_0892",
+   "nepra": [
+    "snapshot_missing_or_mismatch"
+   ],
+   "engine": [
+    "snapshot_missing_or_mismatch"
+   ],
+   "missing": [
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "units"
+   ],
+   "leaky": false,
+   "set": "scored",
+   "match": true
+  },
+  {
+   "stem": "LESCO_0949",
+   "nepra": [
+    "accumulated_units_charged_at_once",
+    "slab_not_prorated_long_period"
+   ],
+   "engine": [
+    "accumulated_units_charged_at_once"
+   ],
+   "missing": [
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": true,
+   "set": "scored",
+   "match": true
+  },
+  {
+   "stem": "LESCO_0966",
+   "nepra": [
+    "detection_not_justified_by_history",
+    "detection_procedure_not_followed"
+   ],
+   "engine": [
+    "detection_procedure_not_followed"
+   ],
+   "missing": [
+    "issue date",
+    "load",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": true,
+   "set": "scored",
+   "match": false
+  },
+  {
+   "stem": "LESCO_0976",
+   "nepra": [
+    "detection_not_justified_by_history",
+    "detection_procedure_not_followed"
+   ],
+   "engine": [
+    "detection_procedure_not_followed"
+   ],
+   "missing": [
+    "issue date",
+    "load",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": true,
+   "set": "scored",
+   "match": false
+  },
+  {
+   "stem": "LESCO_0989",
+   "nepra": [
+    "detection_not_justified_by_history",
+    "detection_procedure_not_followed"
+   ],
+   "engine": [
+    "detection_not_justified_by_history"
+   ],
+   "missing": [
+    "billing month",
+    "issue date",
+    "load",
+    "previous reading date (not a required bill field)",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": true,
+   "set": "scored",
+   "match": true
+  },
+  {
+   "stem": "LESCO_0990",
+   "nepra": [
+    "retrieval_charge_beyond_time_limit"
+   ],
+   "engine": [],
+   "missing": [
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "retrieval date (not printed on bills)",
+    "snapshot",
+    "units",
+    "whether the meter was sent to the manufacturer"
+   ],
+   "leaky": false,
+   "set": "not_scored"
+  },
+  {
+   "stem": "LESCO_0991",
+   "nepra": [
+    "retrieval_charge_beyond_time_limit"
+   ],
+   "engine": [],
+   "missing": [
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "retrieval date (not printed on bills)",
+    "snapshot",
+    "units",
+    "whether the meter was sent to the manufacturer"
+   ],
+   "leaky": false,
+   "set": "scored",
+   "match": false
+  },
+  {
+   "stem": "LESCO_1011",
+   "nepra": [
+    "none_found"
+   ],
+   "engine": [],
+   "missing": [
+    "billing month",
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "set": "specificity",
+   "false_alarm": false
+  },
+  {
+   "stem": "LESCO_1020",
+   "nepra": [
+    "none_found"
+   ],
+   "engine": [],
+   "missing": [
+    "billing month",
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "set": "specificity",
+   "false_alarm": false
+  },
+  {
+   "stem": "LESCO_1022",
+   "nepra": [
+    "billing_disconnected_or_idle_premises"
+   ],
+   "engine": [
+    "skipped_charges_beyond_recovery_limit"
+   ],
+   "missing": [
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "set": "not_scored"
+  },
+  {
+   "stem": "LESCO_1030",
+   "nepra": [
+    "retrieval_charge_beyond_time_limit"
+   ],
+   "engine": [],
+   "missing": [
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "retrieval date (not printed on bills)",
+    "snapshot",
+    "units",
+    "whether the meter was sent to the manufacturer"
+   ],
+   "leaky": false,
+   "set": "scored",
+   "match": false
+  },
+  {
+   "stem": "LESCO_1032",
+   "nepra": [
+    "detection_procedure_not_followed",
+    "slab_not_prorated_long_period"
+   ],
+   "engine": [
+    "accumulated_units_charged_at_once"
+   ],
+   "missing": [
+    "issue date",
+    "load",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot",
+    "status or rate applied on the bill"
+   ],
+   "leaky": true,
+   "set": "scored",
+   "match": false
+  },
+  {
+   "stem": "LESCO_1040",
+   "nepra": [
+    "average_billing_beyond_limit",
+    "detection_procedure_not_followed"
+   ],
+   "engine": [
+    "average_billing_beyond_limit",
+    "detection_procedure_not_followed"
+   ],
+   "missing": [
+    "issue date",
+    "load",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "retrieval date (not printed on bills)",
+    "snapshot",
+    "units",
+    "whether the meter was sent to the manufacturer"
+   ],
+   "leaky": false,
+   "set": "scored",
+   "match": true
+  },
+  {
+   "stem": "LESCO_1051",
+   "nepra": [
+    "average_billing_beyond_limit",
+    "detection_not_justified_by_history",
+    "detection_procedure_not_followed"
+   ],
+   "engine": [
+    "detection_not_justified_by_history",
+    "detection_procedure_not_followed"
+   ],
+   "missing": [
+    "issue date",
+    "load",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": true,
+   "set": "scored",
+   "match": true
+  },
+  {
+   "stem": "LESCO_1053",
+   "nepra": [
+    "average_billing_beyond_limit",
+    "detection_not_justified_by_history",
+    "detection_procedure_not_followed"
+   ],
+   "engine": [
+    "average_billing_beyond_limit",
+    "detection_procedure_not_followed"
+   ],
+   "missing": [
+    "issue date",
+    "load",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "set": "scored",
+   "match": true
+  },
+  {
+   "stem": "LESCO_1056",
+   "nepra": [
+    "none_found"
+   ],
+   "engine": [
+    "accumulated_units_charged_at_once"
+   ],
+   "missing": [
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot",
+    "status or rate applied on the bill"
+   ],
+   "leaky": false,
+   "set": "specificity",
+   "false_alarm": true
+  },
+  {
+   "stem": "LESCO_1062",
+   "nepra": [
+    "retrieval_charge_beyond_time_limit"
+   ],
+   "engine": [],
+   "missing": [
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "retrieval date (not printed on bills)",
+    "snapshot",
+    "units",
+    "whether the meter was sent to the manufacturer"
+   ],
+   "leaky": false,
+   "set": "scored",
+   "match": false
+  },
+  {
+   "stem": "LESCO_1063",
+   "nepra": [
+    "detection_load_or_period_exceeds_limits"
+   ],
+   "engine": [],
+   "missing": [
+    "issue date",
+    "load",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": true,
+   "set": "scored",
+   "match": false
+  },
+  {
+   "stem": "LESCO_1067",
+   "nepra": [
+    "detection_procedure_not_followed"
+   ],
+   "engine": [
+    "detection_procedure_not_followed",
+    "detection_units_formula_error"
+   ],
+   "missing": [
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "set": "not_scored"
+  },
+  {
+   "stem": "LESCO_1070",
+   "nepra": [
+    "snapshot_missing_or_mismatch"
+   ],
+   "engine": [
+    "snapshot_missing_or_mismatch"
+   ],
+   "missing": [
+    "billing month",
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "reading date",
+    "retrieval date (not printed on bills)",
+    "units",
+    "whether the meter was sent to the manufacturer"
+   ],
+   "leaky": true,
+   "set": "scored",
+   "match": true
+  },
+  {
+   "stem": "LESCO_1148",
+   "nepra": [
+    "detection_load_or_period_exceeds_limits"
+   ],
+   "engine": [],
+   "missing": [
+    "issue date",
+    "load",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": true,
+   "set": "not_scored"
+  },
+  {
+   "stem": "LESCO_1183",
+   "nepra": [
+    "detection_load_or_period_exceeds_limits"
+   ],
+   "engine": [],
+   "missing": [
+    "issue date",
+    "load",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": true,
+   "set": "scored",
+   "match": false
+  },
+  {
+   "stem": "LESCO_1203",
+   "nepra": [
+    "accumulated_units_charged_at_once"
+   ],
+   "engine": [
+    "accumulated_units_charged_at_once"
+   ],
+   "missing": [
+    "billing month",
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": true,
+   "set": "scored",
+   "match": true
+  },
+  {
+   "stem": "MEPCO_1220",
+   "nepra": [
+    "wrong_tariff_category"
+   ],
+   "engine": [],
+   "missing": [
+    "billing month",
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "set": "not_scored"
+  },
+  {
+   "stem": "MEPCO_1243",
+   "nepra": [
+    "none_found"
+   ],
+   "engine": [],
+   "missing": [
+    "billing month",
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "set": "specificity",
+   "false_alarm": false
+  },
+  {
+   "stem": "MEPCO_1261",
+   "nepra": [
+    "other"
+   ],
+   "engine": [],
+   "missing": [
+    "billing month",
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "set": "not_scored"
+  },
+  {
+   "stem": "MEPCO_1264",
+   "nepra": [
+    "wrong_tariff_category"
+   ],
+   "engine": [],
+   "missing": [
+    "billing month",
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "set": "not_scored"
+  },
+  {
+   "stem": "MEPCO_1266",
+   "nepra": [
+    "protected_status_wrongly_removed",
+    "slab_not_prorated_long_period"
+   ],
+   "engine": [
+    "accumulated_units_charged_at_once"
+   ],
+   "missing": [
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot"
+   ],
+   "leaky": false,
+   "set": "scored",
+   "match": false
+  },
+  {
+   "stem": "MEPCO_1326",
+   "nepra": [
+    "other"
+   ],
+   "engine": [],
+   "missing": [
+    "billing month",
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "set": "not_scored"
+  },
+  {
+   "stem": "MEPCO_1333",
+   "nepra": [
+    "excessive_reading_vs_history",
+    "other"
+   ],
+   "engine": [],
+   "missing": [
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "set": "not_scored"
+  },
+  {
+   "stem": "PESCO_1357",
+   "nepra": [
+    "detection_procedure_not_followed"
+   ],
+   "engine": [],
+   "missing": [
+    "billing month",
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": true,
+   "set": "not_scored"
+  },
+  {
+   "stem": "PESCO_1361",
+   "nepra": [
+    "skipped_charges_beyond_recovery_limit"
+   ],
+   "engine": [
+    "skipped_charges_beyond_recovery_limit"
+   ],
+   "missing": [
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "set": "scored",
+   "match": true
+  },
+  {
+   "stem": "PESCO_1368",
+   "nepra": [
+    "reading_data_entry_error",
+    "snapshot_missing_or_mismatch"
+   ],
+   "engine": [],
+   "missing": [
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "set": "scored",
+   "match": false
+  },
+  {
+   "stem": "PESCO_1391",
+   "nepra": [
+    "excessive_reading_vs_history"
+   ],
+   "engine": [],
+   "missing": [
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "set": "not_scored"
+  },
+  {
+   "stem": "PESCO_1393",
+   "nepra": [
+    "detection_procedure_not_followed"
+   ],
+   "engine": [
+    "detection_procedure_not_followed"
+   ],
+   "missing": [
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "set": "not_scored"
+  },
+  {
+   "stem": "PESCO_1394",
+   "nepra": [
+    "reading_data_entry_error",
+    "snapshot_missing_or_mismatch"
+   ],
+   "engine": [],
+   "missing": [
+    "billing month",
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "set": "scored",
+   "match": false
+  },
+  {
+   "stem": "PESCO_1396",
+   "nepra": [
+    "accumulated_units_charged_at_once",
+    "slab_not_prorated_long_period"
+   ],
+   "engine": [
+    "accumulated_units_charged_at_once"
+   ],
+   "missing": [
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot",
+    "status or rate applied on the bill"
+   ],
+   "leaky": true,
+   "set": "scored",
+   "match": true
+  },
+  {
+   "stem": "PESCO_1409",
+   "nepra": [
+    "slab_not_prorated_long_period"
+   ],
+   "engine": [
+    "accumulated_units_charged_at_once"
+   ],
+   "missing": [
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot",
+    "status or rate applied on the bill"
+   ],
+   "leaky": false,
+   "set": "scored",
+   "match": false
+  },
+  {
+   "stem": "PESCO_1420",
+   "nepra": [
+    "detection_load_or_period_exceeds_limits",
+    "meter_defect_not_rectified_in_time"
+   ],
+   "engine": [
+    "detection_procedure_not_followed"
+   ],
+   "missing": [
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "set": "not_scored"
+  },
+  {
+   "stem": "PESCO_1443",
+   "nepra": [
+    "skipped_charges_beyond_recovery_limit"
+   ],
+   "engine": [
+    "skipped_charges_beyond_recovery_limit"
+   ],
+   "missing": [
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "set": "scored",
+   "match": true
+  },
+  {
+   "stem": "QESCO_1469",
+   "nepra": [
+    "accumulated_units_charged_at_once",
+    "slab_not_prorated_long_period",
+    "snapshot_missing_or_mismatch"
+   ],
+   "engine": [
+    "accumulated_units_charged_at_once",
+    "snapshot_missing_or_mismatch"
+   ],
+   "missing": [
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "status or rate applied on the bill"
+   ],
+   "leaky": true,
+   "set": "scored",
+   "match": true
+  },
+  {
+   "stem": "QESCO_1471",
+   "nepra": [
+    "detection_procedure_not_followed",
+    "meter_defect_not_rectified_in_time"
+   ],
+   "engine": [
+    "detection_procedure_not_followed"
+   ],
+   "missing": [
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "set": "not_scored"
+  },
+  {
+   "stem": "QESCO_1472",
+   "nepra": [
+    "excessive_reading_vs_history",
+    "meter_defect_not_rectified_in_time"
+   ],
+   "engine": [],
+   "missing": [
+    "billing month",
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "set": "not_scored"
+  },
+  {
+   "stem": "QESCO_1475",
+   "nepra": [
+    "other"
+   ],
+   "engine": [],
+   "missing": [
+    "billing month",
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": false,
+   "set": "not_scored"
+  },
+  {
+   "stem": "QESCO_1478",
+   "nepra": [
+    "accumulated_units_charged_at_once",
+    "slab_not_prorated_long_period"
+   ],
+   "engine": [
+    "accumulated_units_charged_at_once"
+   ],
+   "missing": [
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "rate table for this billing month",
+    "reading date",
+    "snapshot",
+    "status or rate applied on the bill"
+   ],
+   "leaky": true,
+   "set": "scored",
+   "match": true
+  },
+  {
+   "stem": "SEPCO_1498",
+   "nepra": [
+    "detection_procedure_not_followed",
+    "detection_units_formula_error",
+    "other"
+   ],
+   "engine": [],
+   "missing": [
+    "billing month",
+    "issue date",
+    "previous reading date (not a required bill field)",
+    "reading date",
+    "snapshot",
+    "units"
+   ],
+   "leaky": true,
+   "set": "not_scored"
+  }
+ ]
+}
