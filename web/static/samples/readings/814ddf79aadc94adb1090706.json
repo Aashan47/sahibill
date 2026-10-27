@@ -1,0 +1,184 @@
+{
+ "fields": {
+  "billing_month": {
+   "value": "2026-10",
+   "text": "2026-10"
+  },
+  "reading_date": {
+   "value": "2026-10-10",
+   "text": "2026-10-10"
+  },
+  "prev_reading_date": {
+   "value": "2026-09-12",
+   "text": "2026-09-12"
+  },
+  "issue_date": {
+   "value": "2026-10-14",
+   "text": "2026-10-14"
+  },
+  "due_date": {
+   "value": "2026-10-26",
+   "text": "2026-10-26"
+  },
+  "tariff": {
+   "value": "A-1(a)",
+   "text": "A-1(a)"
+  },
+  "sanctioned_load_kw": {
+   "value": 1.0,
+   "text": "1.0"
+  },
+  "status": {
+   "value": "lifeline",
+   "text": "lifeline"
+  },
+  "prev_reading": {
+   "value": 19694,
+   "text": "19694"
+  },
+  "present_reading": {
+   "value": 19736,
+   "text": "19736"
+  },
+  "units": {
+   "value": 42,
+   "text": "42"
+  },
+  "carried_forward": {
+   "value": null,
+   "text": null
+  },
+  "snapshot_state": {
+   "value": "readable",
+   "text": "readable"
+  },
+  "snapshot_reading": {
+   "value": 19687,
+   "text": "019687"
+  },
+  "snapshot_stamp": {
+   "value": "2026-10-10 10:27",
+   "text": "2026-10-10 10:27"
+  },
+  "variable": {
+   "value": 165.9,
+   "text": "165.90"
+  },
+  "fixed": {
+   "value": 0.0,
+   "text": "0.00"
+  },
+  "min_charge": {
+   "value": 75.0,
+   "text": "75.00"
+  },
+  "fca": {
+   "value": null,
+   "text": null
+  },
+  "qta": {
+   "value": null,
+   "text": null
+  },
+  "gst": {
+   "value": 43.36,
+   "text": "43.36"
+  },
+  "payable_within": {
+   "value": 284.0,
+   "text": "284.00"
+  }
+ },
+ "history": [
+  {
+   "month": "Sep-26",
+   "units": 39,
+   "mode": ""
+  },
+  {
+   "month": "Aug-26",
+   "units": 66,
+   "mode": ""
+  },
+  {
+   "month": "Jul-26",
+   "units": 78,
+   "mode": ""
+  },
+  {
+   "month": "Jun-26",
+   "units": 85,
+   "mode": ""
+  },
+  {
+   "month": "May-26",
+   "units": 84,
+   "mode": ""
+  },
+  {
+   "month": "Apr-26",
+   "units": 60,
+   "mode": ""
+  },
+  {
+   "month": "Mar-26",
+   "units": 49,
+   "mode": ""
+  },
+  {
+   "month": "Feb-26",
+   "units": 37,
+   "mode": ""
+  },
+  {
+   "month": "Jan-26",
+   "units": 53,
+   "mode": ""
+  },
+  {
+   "month": "Dec-25",
+   "units": 50,
+   "mode": ""
+  },
+  {
+   "month": "Nov-25",
+   "units": 41,
+   "mode": ""
+  },
+  {
+   "month": "Oct-25",
+   "units": 42,
+   "mode": ""
+  }
+ ],
+ "supplementary": [],
+ "orientation": 0,
+ "_call": {
+  "usage": {
+   "completion_tokens": 1273,
+   "prompt_tokens": 2698,
+   "total_tokens": 3971,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": null,
+    "reasoning_tokens": 745,
+    "rejected_prediction_tokens": null
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": null,
+    "cached_tokens": 768,
+    "image_tokens": 1881
+   },
+   "prompt_cache_hit_tokens": 768,
+   "prompt_cache_miss_tokens": 1930,
+   "reasoning_tokens": 745
+  },
+  "usd": 0.009222,
+  "latency_s": 10.8,
+  "provider": "nebius",
+  "model": "meta-models/muse-spark-open",
+  "reasoning_effort": "low",
+  "cached": true
+ },
+ "_recovered_from": "cache/llm, reader prompt at commit 0d407aa"
+}

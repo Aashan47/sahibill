@@ -1,0 +1,67 @@
+/* SahiBill design tokens. The palette is taken from the bill itself: blue-violet print on thin paper,
+   and the inks of the rubber stamps pressed onto paid bills. Red marks a found problem and nothing else. */
+
+:root {
+  --paper: #eef2f4;
+  --surface: #ffffff;
+  --surface-sunk: #e4e9ee;
+  --ink: #1b2a41;
+  --ink-soft: #4a5a73;
+  --ink-faint: #6f7d92;
+  --rule: #c9d3dc;
+  --print: #4b4fa6;          /* the bill's own print colour: links, focus, section bars */
+  --print-deep: #33367a;
+  --on-print: #ffffff;
+  --red: #b3122e;            /* problem found, only */
+  --green: #2e6b4f;          /* looks right */
+  --ochre: #a86412;          /* cannot tell yet, or a question for you */
+  --red-wash: #f8e7ea;
+  --green-wash: #e3efe8;
+  --ochre-wash: #f6ecdf;
+
+  --font: "Atkinson Hyperlegible Next", "Atkinson Hyperlegible", system-ui, sans-serif;
+  --font-ur: "Noto Nastaliq Urdu", "Jameel Noori Nastaleeq", serif;
+
+  --s-14: 0.875rem;
+  --s-16: 1rem;
+  --s-20: 1.25rem;
+  --s-28: 1.75rem;
+  --s-40: 2.5rem;
+
+  --gap-1: 4px;
+  --gap-2: 8px;
+  --gap-3: 12px;
+  --gap-4: 16px;
+  --gap-5: 24px;
+  --gap-6: 32px;
+  --gap-7: 48px;
+  --gap-8: 72px;
+
+  --radius-s: 6px;
+  --radius-m: 10px;
+  --shadow-lift: 0 1px 0 rgba(27, 42, 65, 0.06), 0 8px 24px -12px rgba(27, 42, 65, 0.28);
+  --measure: 68ch;
+  --page: 1180px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #12192a;
+    --surface: #1a2338;
+    --surface-sunk: #151d2f;
+    --ink: #e7ecf3;
+    --ink-soft: #b4bfd0;
+    --ink-faint: #8d99ad;
+    --rule: #2f3b55;
+    --print: #9ea2f0;
+    --print-deep: #3c4090;
+    --on-print: #ffffff;
+    --red: #ff7b8e;
+    --green: #7fcba5;
+    --ochre: #e6b26a;
+    --red-wash: #3a1b25;
+    --green-wash: #183229;
+    --ochre-wash: #36291a;
+    --shadow-lift: 0 1px 0 rgba(0, 0, 0, 0.3), 0 8px 24px -12px rgba(0, 0, 0, 0.6);
+  }
+}

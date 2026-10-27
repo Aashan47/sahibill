@@ -1,0 +1,196 @@
+{
+ "fields": {
+  "billing_month": {
+   "value": "2026-10",
+   "text": "2026-10"
+  },
+  "reading_date": {
+   "value": "2026-10-10",
+   "text": "2026-10-10"
+  },
+  "prev_reading_date": {
+   "value": "2026-09-10",
+   "text": "2026-09-10"
+  },
+  "issue_date": {
+   "value": "2026-10-14",
+   "text": "2026-10-14"
+  },
+  "due_date": {
+   "value": "2026-10-24",
+   "text": "2026-10-24"
+  },
+  "tariff": {
+   "value": "A-1(a)",
+   "text": "A-1(a)"
+  },
+  "sanctioned_load_kw": {
+   "value": 3.0,
+   "text": "3.0"
+  },
+  "status": {
+   "value": "protected",
+   "text": "protected"
+  },
+  "prev_reading": {
+   "value": 26030,
+   "text": "26030"
+  },
+  "present_reading": {
+   "value": 26142,
+   "text": "26142"
+  },
+  "units": {
+   "value": 112,
+   "text": "112"
+  },
+  "carried_forward": {
+   "value": null,
+   "text": null
+  },
+  "snapshot_state": {
+   "value": "readable",
+   "text": "026142"
+  },
+  "snapshot_reading": {
+   "value": 26142,
+   "text": "026142"
+  },
+  "snapshot_stamp": {
+   "value": "2026-10-10 10:33",
+   "text": "2026-10-10 10:33"
+  },
+  "variable": {
+   "value": 1210.12,
+   "text": "1,210.12"
+  },
+  "fixed": {
+   "value": 900.0,
+   "text": "900.00"
+  },
+  "min_charge": {
+   "value": null,
+   "text": null
+  },
+  "fca": {
+   "value": 165.18,
+   "text": "165.18"
+  },
+  "qta": {
+   "value": 58.17,
+   "text": "58.17"
+  },
+  "gst": {
+   "value": 6073.13,
+   "text": "6,073.13"
+  },
+  "payable_within": {
+   "value": 39813.0,
+   "text": "39,813.00"
+  }
+ },
+ "history": [
+  {
+   "month": "Sep-26",
+   "units": 101,
+   "mode": ""
+  },
+  {
+   "month": "Aug-26",
+   "units": 149,
+   "mode": ""
+  },
+  {
+   "month": "Jul-26",
+   "units": 195,
+   "mode": ""
+  },
+  {
+   "month": "Jun-26",
+   "units": 195,
+   "mode": ""
+  },
+  {
+   "month": "May-26",
+   "units": 195,
+   "mode": ""
+  },
+  {
+   "month": "Apr-26",
+   "units": 145,
+   "mode": ""
+  },
+  {
+   "month": "Mar-26",
+   "units": 51,
+   "mode": ""
+  },
+  {
+   "month": "Feb-26",
+   "units": 50,
+   "mode": ""
+  },
+  {
+   "month": "Jan-26",
+   "units": 49,
+   "mode": ""
+  },
+  {
+   "month": "Dec-25",
+   "units": 125,
+   "mode": ""
+  },
+  {
+   "month": "Nov-25",
+   "units": 124,
+   "mode": ""
+  },
+  {
+   "month": "Oct-25",
+   "units": 114,
+   "mode": ""
+  }
+ ],
+ "supplementary": [
+  {
+   "kind": "detection",
+   "text": "DETECTION | 2414 units | Rs 31,406.14 | 3 months | period 2026-01 to 2026-03 | load 3 kW | reason: meter tampering (illegal abstraction)",
+   "units": 2414,
+   "amount": 31406.14,
+   "months": 3,
+   "period_from": "2026-01",
+   "period_to": "2026-03",
+   "load_kw": 3.0,
+   "event_date": null
+  }
+ ],
+ "orientation": 0,
+ "_call": {
+  "usage": {
+   "completion_tokens": 1243,
+   "prompt_tokens": 2401,
+   "total_tokens": 3644,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": null,
+    "reasoning_tokens": 602,
+    "rejected_prediction_tokens": null
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": null,
+    "cached_tokens": 0,
+    "image_tokens": 1584
+   },
+   "prompt_cache_hit_tokens": 0,
+   "prompt_cache_miss_tokens": 2401,
+   "reasoning_tokens": 602
+  },
+  "usd": 0.008698,
+  "latency_s": 10.8,
+  "provider": "nebius",
+  "model": "meta-models/muse-spark-open",
+  "reasoning_effort": "low",
+  "cached": true
+ },
+ "_recovered_from": "cache/llm, reader prompt at commit 0d407aa"
+}

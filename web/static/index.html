@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SahiBill</title>
+<meta name="description" content="Check a Pakistani electricity bill against NEPRA's own rules.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Noto+Nastaliq+Urdu:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+<header class="top">
+  <a class="mark" href="/"><span class="en">SahiBill</span> <span class="ur" lang="ur">صحیح بل</span></a>
+  <p class="built">Built with Muse Spark Open</p>
+</header>
+
+<main>
+  <section id="ask" class="ask">
+    <h1>Is this bill right?</h1>
+    <p class="ur lead-ur" lang="ur">کیا یہ بل درست ہے؟</p>
+    <p class="lead">Take a photo of your electricity bill. SahiBill reads it and checks it against NEPRA's Consumer Service Manual and the tariff in force, and tells you what to ask the utility for.</p>
+
+    <label class="drop" id="drop">
+      <input type="file" id="photo" accept="image/*" capture="environment">
+      <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+      <span class="drop-main">Take or choose a photo of the bill</span>
+      <span class="drop-sub">Flat, in daylight, the whole bill in view</span>
+      <span class="ur drop-ur" lang="ur">بل کی تصویر لیں یا منتخب کریں</span>
+    </label>
+
+    <div class="samples">
+      <p class="samples-title">Or try a sample bill (synthetic, made for testing)</p>
+      <div id="sample-list" class="sample-list"></div>
+    </div>
+  </section>
+
+  <section id="working" class="working" hidden>
+    <p class="working-line">Reading the bill<span class="dots"></span></p>
+    <p class="working-sub">Muse Spark Open is reading each field. The rules are checked in code once the reading is done.</p>
+  </section>
+
+  <section id="result" class="result" hidden>
+    <div class="bill-col">
+      <figure class="bill-frame">
+        <img id="bill-img" alt="The bill being checked">
+        <figcaption id="bill-cap"></figcaption>
+      </figure>
+      <button class="again" id="again" type="button">Check another bill</button>
+    </div>
+
+    <div class="slip-col">
+      <div class="slip" id="slip" aria-live="polite">
+        <h2 id="headline"></h2>
+        <p class="ur headline-ur" id="headline-ur" lang="ur"></p>
+        <p class="tally" id="tally"></p>
+        <ol class="lines" id="lines"></ol>
+      </div>
+
+      <section class="block" id="ask-utility" hidden>
+        <h3>Ask the utility for these records</h3>
+        <p class="block-sub">The manual gives you a right to each one. They go in your complaint.</p>
+        <ul id="utility-list" class="reqs"></ul>
+      </section>
+
+      <section class="block" id="complaint" hidden>
+        <h3>Your complaint, ready to send</h3>
+        <p class="block-sub">Fill in your name, address and reference number. Every number in it comes from the checks above.</p>
+        <div class="letter-tabs" role="tablist">
+          <button type="button" role="tab" aria-selected="true" data-lang="en">English</button>
+          <button type="button" role="tab" aria-selected="false" data-lang="ur" class="ur-tab">اردو</button>
+        </div>
+        <pre class="letter" id="letter" tabindex="0"></pre>
+        <button type="button" class="copy" id="copy-letter">Copy the letter</button>
+      </section>
+
+      <section class="block" id="retake" hidden>
+        <h3>Take the photo again</h3>
+        <ul id="retake-list" class="reqs"></ul>
+      </section>
+
+      <section class="block" id="questions" hidden>
+        <h3>Only you know this</h3>
+        <ul id="question-list" class="reqs"></ul>
+      </section>
+
+      <section class="block quiet" id="limits" hidden>
+        <h3>What SahiBill could not check</h3>
+        <ul id="limit-list" class="reqs"></ul>
+      </section>
+
+      <details class="block quiet" id="read-block">
+        <summary>What was read from the bill</summary>
+        <table class="read" id="read-table"><tbody></tbody></table>
+      </details>
+
+      <details class="block quiet">
+        <summary>How SahiBill decides</summary>
+        <ul class="how">
+          <li><b>Muse Spark Open</b> reads the photo, field by field, and copies what is printed. It does not decide anything.</li>
+          <li><b>Code</b> holds back any field that breaks a rule every genuine bill follows: readings that do not add up, dates outside the billing month, charges that do not total.</li>
+          <li><b>Code</b> applies the rules: NEPRA's Consumer Service Manual (revised 26 November 2025) and the domestic tariff for 2026. Every number in the verdict is computed here.</li>
+          <li>When the bill cannot settle a question, SahiBill says so and names the record to ask for.</li>
+        </ul>
+      </details>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <p>SahiBill checks what a bill can show. It is not legal advice and does not file anything for you.</p>
+</footer>
+<script src="/static/app.js"></script>
+</body>
+</html>

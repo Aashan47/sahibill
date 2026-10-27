@@ -1,0 +1,164 @@
+{
+ "source": "sahibill/tariff.py (NEPRA decision of 11-02-2026, S.R.O. 279(I)/2026)",
+ "protected_limit": 200,
+ "protected_months": 6,
+ "protected": [
+  {
+   "upto": 100,
+   "fixed_per_kw": 200,
+   "rate": 10.54
+  },
+  {
+   "upto": 200,
+   "fixed_per_kw": 300,
+   "rate": 13.01
+  }
+ ],
+ "unprotected": [
+  {
+   "upto": 100,
+   "fixed_per_kw": 275,
+   "rate": 22.44
+  },
+  {
+   "upto": 200,
+   "fixed_per_kw": 300,
+   "rate": 28.91
+  },
+  {
+   "upto": 300,
+   "fixed_per_kw": 350,
+   "rate": 33.1
+  },
+  {
+   "upto": 400,
+   "fixed_per_kw": 400,
+   "rate": 36.46
+  },
+  {
+   "upto": 500,
+   "fixed_per_kw": 500,
+   "rate": 38.95
+  },
+  {
+   "upto": 600,
+   "fixed_per_kw": 675,
+   "rate": 40.22
+  },
+  {
+   "upto": 700,
+   "fixed_per_kw": 675,
+   "rate": 41.85
+  },
+  {
+   "upto": null,
+   "fixed_per_kw": 675,
+   "rate": 47.2
+  }
+ ],
+ "examples": [
+  {
+   "status": "protected",
+   "units": 1,
+   "energy": 10.54
+  },
+  {
+   "status": "protected",
+   "units": 99,
+   "energy": 1043.46
+  },
+  {
+   "status": "protected",
+   "units": 100,
+   "energy": 1054.0
+  },
+  {
+   "status": "protected",
+   "units": 101,
+   "energy": 1067.01
+  },
+  {
+   "status": "protected",
+   "units": 180,
+   "energy": 2094.8
+  },
+  {
+   "status": "protected",
+   "units": 200,
+   "energy": 2355.0
+  },
+  {
+   "status": "unprotected",
+   "units": 150,
+   "energy": 4336.5
+  },
+  {
+   "status": "unprotected",
+   "units": 200,
+   "energy": 5782.0
+  },
+  {
+   "status": "unprotected",
+   "units": 201,
+   "energy": 6653.1
+  },
+  {
+   "status": "unprotected",
+   "units": 204,
+   "energy": 6752.4
+  },
+  {
+   "status": "unprotected",
+   "units": 240,
+   "energy": 7944.0
+  },
+  {
+   "status": "unprotected",
+   "units": 300,
+   "energy": 9930.0
+  },
+  {
+   "status": "unprotected",
+   "units": 301,
+   "energy": 10974.46
+  }
+ ],
+ "prorata_examples": [
+  {
+   "units": 204,
+   "days": 34,
+   "month_days": 30,
+   "billed": 180
+  },
+  {
+   "units": 240,
+   "days": 40,
+   "month_days": 30,
+   "billed": 180
+  },
+  {
+   "units": 186,
+   "days": 31,
+   "month_days": 31,
+   "billed": 186
+  },
+  {
+   "units": 208,
+   "days": 33,
+   "month_days": 30,
+   "billed": 189
+  },
+  {
+   "units": 54,
+   "days": 33,
+   "month_days": 30,
+   "billed": 49
+  },
+  {
+   "units": 199,
+   "days": 35,
+   "month_days": 31,
+   "billed": 176
+  }
+ ]
+}
