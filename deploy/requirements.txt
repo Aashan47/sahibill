@@ -1,0 +1,7 @@
+# What the live server runs (versions from the development environment, 27 Oct 2026).
+fastapi==0.157.0
+uvicorn==0.54.0
+python-multipart==0.0.32
+pillow==13.0.0
+numpy==2.5.4
+modal==1.6.2

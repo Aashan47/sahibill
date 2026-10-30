@@ -1,0 +1,19 @@
+[Unit]
+Description=SahiBill, electricity bills checked against NEPRA's rules
+After=network-online.target
+
+[Service]
+User=ubuntu
+WorkingDirectory=/home/ubuntu/sahibill/app
+EnvironmentFile=/home/ubuntu/sahibill/env
+Environment=SAHIBILL_CACHE=/home/ubuntu/sahibill/cache
+Environment=SAHIBILL_KEEP_DAYS=30
+# Bound to this machine only; the public reaches it through the Cloudflare tunnel, which sets CF-Connecting-IP.
+ExecStart=/home/ubuntu/sahibill/.venv/bin/python -m uvicorn web.app:app --host 127.0.0.1 --port 8420 --workers 1
+Restart=on-failure
+MemoryMax=400M
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
