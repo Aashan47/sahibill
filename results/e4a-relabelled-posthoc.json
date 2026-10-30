@@ -1,0 +1,32 @@
+{
+ "all": {
+  "decisions": 65,
+  "flagged_a_violation_nepra_found": 45,
+  "rate": 0.692,
+  "cannot_tell_yet": 19,
+  "raised_only_violations_nepra_did_not_find": [
+   "K-Electric_0685"
+  ],
+  "also_raised_a_violation_nepra_did_not_find": [
+   "IESCO_0282",
+   "K-Electric_0681",
+   "K-Electric_0685",
+   "LESCO_0743"
+  ]
+ },
+ "strict": {
+  "decisions": 43,
+  "flagged_a_violation_nepra_found": 28,
+  "rate": 0.651,
+  "cannot_tell_yet": 15,
+  "raised_only_violations_nepra_did_not_find": [],
+  "also_raised_a_violation_nepra_did_not_find": [
+   "IESCO_0282",
+   "K-Electric_0681"
+  ]
+ },
+ "no_violation_decisions": {
+  "decisions": 8,
+  "false_alarms": 1
+ }
+}

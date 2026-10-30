@@ -45,3 +45,30 @@ corrected, each with an amendment line; the scored code changes were confirmed o
 the same inputs and rule (`e4a-relabelled.json`): all scored 32 of 65 (49.2%), strict set 20 of 43 (46.5%);
 specificity unchanged (1 false alarm in 8). The pre-registered result above stands as the result of record;
 the re-read moves it by about one point.
+
+## Counted after the test (29 October 2026): did SahiBill flag a violation NEPRA also found?
+
+Post hoc, from the same per-decision rows, no new run (`eval/e4a_posthoc.py`, output `e4a-posthoc.json`).
+The pre-registered result above remains the result of record.
+
+Why recount: the pre-registered rule scores only violations in a fixed list of codes the engine "can raise".
+That list left out `detection_procedure_not_followed`, a check the engine does raise (CSM detection
+procedure, `sahibill/rules/charges.py`), so a decision where SahiBill caught exactly that violation, and
+NEPRA found it too, counted as a miss. It also holds two codes for one clause (CSM 6.4.2, above). The
+recount asks the household's question for each decision NEPRA ruled against the utility.
+
+| Set | Flagged a violation NEPRA also found | Said cannot tell yet | Raised only violations NEPRA did not find |
+|---|---|---|---|
+| All scored (64) | 45 (70.3%) | 18 | 1 (K-Electric_0685) |
+| Strict (42) | 28 (66.7%) | 14 | 0 |
+| All, after the label re-read (65) | 45 (69.2%) | 19 | 1 |
+| Strict, after the label re-read (43) | 28 (65.1%) | 15 | 0 |
+
+In 4 of the 64 SahiBill also raised a violation NEPRA's decision does not name, next to one it does
+(IESCO_0282, K-Electric_0681) or alone (K-Electric_0685), or a procedural one next to a matched one
+(LESCO_0743). NEPRA decisions rule on the complaint as filed, so a violation they do not name is not proof
+SahiBill was wrong, and it is not proof it was right. On the 8 decisions where NEPRA found no violation,
+SahiBill raised a problem in 1 (unchanged).
+
+This is a count chosen after seeing the result. It does not change the outcome of the prediction, which was
+judged on the strict set under the written rule: not met.

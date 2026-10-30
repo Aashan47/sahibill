@@ -15,6 +15,7 @@ CL_SNAP = "CSM 6.1.3 and 6.1.3.1 (snapshot printed, time-stamped, geo-tagged); C
 ASK_SNAPSHOT = "confirmation that no meter-reading photo is printed on the bill"
 ASK_STAMP = "confirmation that no time stamp is printed with the meter-reading photo"
 ASK_MCO = "confirmation that the old meter's final-reading photo is not printed"
+ASK_STAMP_DATE = "the date printed with the meter photo, which was read as a date outside this billing period"
 CL_PRORATA = "CSM 6.1.1.1 (pro-rata billing; units over the period carried forward to the next billing cycle)"
 CL_AVG ="CSM 4.3.1(b) and 4.3.2(b) (higher of same month last year or 11-month average, max 2 months); CSM 6.1.5 (provisional: lower)"
 CL_RET = "CSM 4.3.2(d) (display wash: no debit unless retrieved within 3 months of replacement; 6 via manufacturer)"
@@ -69,6 +70,13 @@ def check_snapshot(f: BillFacts) -> list[Finding]:
                            note="snapshot shows no time stamp (CSM 6.1.3.1: time stamp and geo-tag shall be printed)"))
     elif f.pro_rata_reading and f.snapshot_stamp_date and f.reading_date and f.snapshot_stamp_date > f.reading_date:
         pass   # a pro-rata bill: the recorded reading (and its photo) comes after the reading date it is billed to
+    elif (f.snapshot_stamp_date and f.prev_reading_date and f.snapshot_stamp_date < f.prev_reading_date
+          and any(x.status == OK and x.numbers.get("excess_units") == 0 for x in out)):
+        # The photo shows this period's billed reading, so it cannot have been taken before the period began:
+        # the stamp was misread (often one digit of the year). Ask; an old photo would show an old reading.
+        out.append(Finding("2", CBD, clause=CL_SNAP, numbers={"stamp_date": f.snapshot_stamp_date,
+                                                               "reading_date": f.reading_date},
+                           missing=[ASK_STAMP_DATE]))
     elif f.snapshot_stamp_date and f.reading_date and f.snapshot_stamp_date != f.reading_date:
         out.append(Finding("2", PROBLEM, "snapshot_missing_or_mismatch", CL_SNAP,
                            {"stamp_date": f.snapshot_stamp_date, "reading_date": f.reading_date},

@@ -196,3 +196,42 @@ read (5 in stage 1, 4 re-read in stage 1b) had wrong fields. Predictions, scored
   with the gate and the consistency layer, at most 1% wrong among accepted fields. How the refused photos
   read is reported as a description.
 - Budget: hard stop at $0.25 of new spend on the cost log (logged spend $2.2468 at the start).
+
+**29 October 2026, before the set below was generated or any of it read: E3 re-measured on a fresh set.**
+The E3 result of record (21 October, 76.9% at levels 0 to 2) stands for the frozen set. Its diagnosis traced
+most misses to the generator's answer key, which was fixed afterwards (oracle test: the rules on a perfect
+reading return exactly the seeded problems on 180 bills). This measures the fixed generator through the
+product path as it now runs live.
+- Set: `python -m sahibill.synth.generate --n 54 --seed 20261029 --levels 2,3`, never seen, every bill used
+  (no calibration half: nothing is tuned on it). About 1 bill in 3 is clean.
+- Path, per photo: the retake gate (`sahibill/readers/quality.py`, threshold 3.0, unchanged); a refused photo
+  is not read and is reported as refused; an accepted photo is read by Spark Open at the E1 stage 2 settings,
+  then the consistency layer, then the rules (`eval/e3.py`, unchanged scoring).
+- Predictions, scored once, unchanged from E3: at level 2 (phone photos), each check finds at least 95% of
+  its seeded defects the bill can show, and at most 2% of clean bills are flagged. Level 3: the share
+  refused, and the detection rate on the accepted photos, are reported as a description.
+- With about 3 defects per check, a single miss puts that check under 95%; the overall rate is reported too.
+- Budget: hard stop at $0.70 of new spend on the cost log (logged spend $2.433 at the start).
+
+**29 October 2026, after the E3 fixes (commit 9a8d6c8) and before the set below was generated: E3 confirmation
+on a second fresh set.** The fixes were made after seeing the first fresh set, so their effect there is
+in-sample. This set is new and the code is frozen at commit faefdc9 for the run.
+- Set: `python -m sahibill.synth.generate --n 54 --seed 20261031 --levels 2,3`, every bill used.
+- Path and scoring: as in the amendment above (retake gate, Spark Open at stage 2 settings, consistency
+  layer, rules, `eval/e3.py`), scored once without the household's answers, and once more with the
+  household confirming the absences SahiBill asks about (`confirmed_absent`), which is how the product
+  finds a missing meter photo.
+- Predictions: at level 2, at most 2% of clean bills flagged (with about 20 clean bills, that means none);
+  with absences confirmed, each check finds at least 95% of its seeded defects. Without confirmation, the
+  "snapshot missing" check is expected to find none, by design, and is reported as such.
+- Budget: hard stop at $0.70 of new spend (logged spend $2.961 at the start).
+
+**29 October 2026, after the misread fix (commit e4b9fa1) and before the set below was generated: E3 third
+fresh set, to measure false alarms on unseen bills after both fixes.** Code frozen at e4b9fa1.
+- Set: `python -m sahibill.synth.generate --n 54 --seed 20261030 --levels 2,3`, every bill used; same path
+  and scoring as the two amendments above.
+- Predictions at level 2: at most 2% of clean bills flagged, scored as the product runs (no answers), which
+  with about 20 clean bills means none; with the household confirming the absences SahiBill asks about, each
+  check finds at least 95% of its seeded defects. Defects now turned into questions (a charge that adds up
+  after one digit is corrected) count as not found, and how many there are is reported.
+- Budget: hard stop at $0.70 of new spend (logged spend $3.540 at the start).

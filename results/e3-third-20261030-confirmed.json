@@ -1,0 +1,543 @@
+{
+ "summary": {
+  "2": {
+   "seeded": 42,
+   "found": 41,
+   "not_determinable": 0,
+   "clean": 18,
+   "false_flag": 0,
+   "detection_rate": 0.976,
+   "false_flag_rate": 0.0
+  },
+  "3": {
+   "seeded": 5,
+   "found": 3,
+   "not_determinable": 0,
+   "clean": 0,
+   "false_flag": 0,
+   "detection_rate": 0.6,
+   "false_flag_rate": null
+  }
+ },
+ "by_type": {
+  "L2 accumulated_units": {
+   "seeded": 4,
+   "found": 4
+  },
+  "L2 arithmetic_error": {
+   "seeded": 3,
+   "found": 3
+  },
+  "L2 average_too_long": {
+   "seeded": 3,
+   "found": 3
+  },
+  "L2 detection_formula_exceeded": {
+   "seeded": 5,
+   "found": 5
+  },
+  "L2 detection_months_exceeded": {
+   "seeded": 3,
+   "found": 3
+  },
+  "L2 detection_vs_history": {
+   "seeded": 4,
+   "found": 4
+  },
+  "L2 due_date_too_short": {
+   "seeded": 2,
+   "found": 2
+  },
+  "L2 protected_wrongly_removed": {
+   "seeded": 4,
+   "found": 4
+  },
+  "L2 retrieval_late": {
+   "seeded": 3,
+   "found": 2
+  },
+  "L2 skipped_beyond_limit": {
+   "seeded": 2,
+   "found": 2
+  },
+  "L2 snapshot_mismatch": {
+   "seeded": 5,
+   "found": 5
+  },
+  "L2 snapshot_missing": {
+   "seeded": 4,
+   "found": 4
+  },
+  "L3 average_too_long": {
+   "seeded": 1,
+   "found": 1
+  },
+  "L3 detection_formula_exceeded": {
+   "seeded": 2,
+   "found": 2
+  },
+  "L3 protected_wrongly_removed": {
+   "seeded": 1,
+   "found": 0
+  },
+  "L3 snapshot_missing": {
+   "seeded": 1,
+   "found": 0
+  }
+ },
+ "rows": [
+  {
+   "image": "syn0000_L2",
+   "defects": [],
+   "raised": []
+  },
+  {
+   "image": "syn0001_L2",
+   "defects": [
+    "retrieval_late",
+    "detection_formula_exceeded"
+   ],
+   "raised": [
+    "detection_units_formula_error",
+    "retrieval_charge_beyond_time_limit"
+   ]
+  },
+  {
+   "image": "syn0002_L2",
+   "defects": [
+    "protected_wrongly_removed"
+   ],
+   "raised": [
+    "protected_status_wrongly_removed"
+   ]
+  },
+  {
+   "image": "syn0003_L2",
+   "defects": [],
+   "raised": []
+  },
+  {
+   "image": "syn0004_L2",
+   "defects": [
+    "arithmetic_error"
+   ],
+   "raised": [
+    "tariff_arithmetic_error"
+   ]
+  },
+  {
+   "image": "syn0005_L2",
+   "defects": [
+    "detection_months_exceeded",
+    "snapshot_mismatch"
+   ],
+   "raised": [
+    "detection_load_or_period_exceeds_limits",
+    "snapshot_missing_or_mismatch"
+   ]
+  },
+  {
+   "image": "syn0006_L2",
+   "defects": [],
+   "raised": []
+  },
+  {
+   "image": "syn0007_L2",
+   "defects": [
+    "detection_vs_history",
+    "snapshot_missing"
+   ],
+   "raised": [
+    "detection_not_justified_by_history",
+    "snapshot_missing_or_mismatch"
+   ]
+  },
+  {
+   "image": "syn0008_L2",
+   "defects": [],
+   "raised": []
+  },
+  {
+   "image": "syn0009_L2",
+   "defects": [],
+   "raised": []
+  },
+  {
+   "image": "syn0010_L2",
+   "defects": [
+    "skipped_beyond_limit"
+   ],
+   "raised": [
+    "skipped_charges_beyond_recovery_limit"
+   ]
+  },
+  {
+   "image": "syn0011_L2",
+   "defects": [
+    "detection_formula_exceeded"
+   ],
+   "raised": [
+    "detection_units_formula_error"
+   ]
+  },
+  {
+   "image": "syn0012_L2",
+   "defects": [],
+   "raised": []
+  },
+  {
+   "image": "syn0013_L2",
+   "defects": [
+    "accumulated_units"
+   ],
+   "raised": [
+    "accumulated_units_charged_at_once"
+   ]
+  },
+  {
+   "image": "syn0014_L2",
+   "defects": [
+    "snapshot_missing"
+   ],
+   "raised": [
+    "snapshot_missing_or_mismatch"
+   ]
+  },
+  {
+   "image": "syn0015_L2",
+   "defects": [],
+   "raised": []
+  },
+  {
+   "image": "syn0016_L2",
+   "defects": [
+    "due_date_too_short"
+   ],
+   "raised": [
+    "due_date_too_short"
+   ]
+  },
+  {
+   "image": "syn0017_L2",
+   "defects": [
+    "snapshot_mismatch"
+   ],
+   "raised": [
+    "snapshot_missing_or_mismatch"
+   ]
+  },
+  {
+   "image": "syn0018_L2",
+   "defects": [],
+   "raised": []
+  },
+  {
+   "image": "syn0019_L2",
+   "defects": [
+    "average_too_long"
+   ],
+   "raised": [
+    "average_billing_beyond_limit"
+   ]
+  },
+  {
+   "image": "syn0020_L2",
+   "defects": [
+    "arithmetic_error",
+    "snapshot_mismatch"
+   ],
+   "raised": [
+    "snapshot_missing_or_mismatch",
+    "tariff_arithmetic_error"
+   ]
+  },
+  {
+   "image": "syn0021_L2",
+   "defects": [],
+   "raised": []
+  },
+  {
+   "image": "syn0022_L2",
+   "defects": [
+    "average_too_long",
+    "detection_formula_exceeded"
+   ],
+   "raised": [
+    "average_billing_beyond_limit",
+    "detection_units_formula_error"
+   ]
+  },
+  {
+   "image": "syn0022_L3",
+   "defects": [
+    "average_too_long",
+    "detection_formula_exceeded"
+   ],
+   "raised": [
+    "average_billing_beyond_limit",
+    "detection_not_justified_by_history",
+    "detection_units_formula_error"
+   ]
+  },
+  {
+   "image": "syn0023_L2",
+   "defects": [
+    "snapshot_missing"
+   ],
+   "raised": [
+    "snapshot_missing_or_mismatch"
+   ]
+  },
+  {
+   "image": "syn0024_L2",
+   "defects": [],
+   "raised": []
+  },
+  {
+   "image": "syn0025_L2",
+   "defects": [
+    "skipped_beyond_limit"
+   ],
+   "raised": [
+    "skipped_charges_beyond_recovery_limit"
+   ]
+  },
+  {
+   "image": "syn0026_L2",
+   "defects": [
+    "protected_wrongly_removed"
+   ],
+   "raised": [
+    "protected_status_wrongly_removed"
+   ]
+  },
+  {
+   "image": "syn0026_L3",
+   "defects": [
+    "protected_wrongly_removed"
+   ],
+   "raised": []
+  },
+  {
+   "image": "syn0028_L2",
+   "defects": [
+    "detection_formula_exceeded"
+   ],
+   "raised": [
+    "detection_units_formula_error"
+   ]
+  },
+  {
+   "image": "syn0029_L2",
+   "defects": [
+    "detection_months_exceeded",
+    "accumulated_units"
+   ],
+   "raised": [
+    "accumulated_units_charged_at_once",
+    "detection_load_or_period_exceeds_limits"
+   ]
+  },
+  {
+   "image": "syn0030_L2",
+   "defects": [],
+   "raised": []
+  },
+  {
+   "image": "syn0031_L2",
+   "defects": [
+    "retrieval_late"
+   ],
+   "raised": []
+  },
+  {
+   "image": "syn0032_L2",
+   "defects": [
+    "due_date_too_short"
+   ],
+   "raised": [
+    "due_date_too_short"
+   ]
+  },
+  {
+   "image": "syn0033_L2",
+   "defects": [],
+   "raised": []
+  },
+  {
+   "image": "syn0034_L2",
+   "defects": [
+    "snapshot_mismatch"
+   ],
+   "raised": [
+    "snapshot_missing_or_mismatch"
+   ]
+  },
+  {
+   "image": "syn0035_L2",
+   "defects": [
+    "accumulated_units"
+   ],
+   "raised": [
+    "accumulated_units_charged_at_once"
+   ]
+  },
+  {
+   "image": "syn0036_L2",
+   "defects": [],
+   "raised": []
+  },
+  {
+   "image": "syn0037_L2",
+   "defects": [
+    "protected_wrongly_removed"
+   ],
+   "raised": [
+    "protected_status_wrongly_removed",
+    "slab_not_prorated_long_period"
+   ]
+  },
+  {
+   "image": "syn0038_L2",
+   "defects": [
+    "detection_vs_history"
+   ],
+   "raised": [
+    "detection_not_justified_by_history"
+   ]
+  },
+  {
+   "image": "syn0039_L2",
+   "defects": [],
+   "raised": []
+  },
+  {
+   "image": "syn0040_L2",
+   "defects": [
+    "snapshot_mismatch",
+    "detection_vs_history"
+   ],
+   "raised": [
+    "detection_not_justified_by_history",
+    "snapshot_missing_or_mismatch"
+   ]
+  },
+  {
+   "image": "syn0041_L2",
+   "defects": [
+    "detection_vs_history"
+   ],
+   "raised": [
+    "detection_not_justified_by_history"
+   ]
+  },
+  {
+   "image": "syn0042_L2",
+   "defects": [],
+   "raised": []
+  },
+  {
+   "image": "syn0043_L2",
+   "defects": [
+    "accumulated_units"
+   ],
+   "raised": [
+    "accumulated_units_charged_at_once"
+   ]
+  },
+  {
+   "image": "syn0044_L2",
+   "defects": [
+    "detection_months_exceeded"
+   ],
+   "raised": [
+    "detection_load_or_period_exceeds_limits"
+   ]
+  },
+  {
+   "image": "syn0045_L2",
+   "defects": [],
+   "raised": []
+  },
+  {
+   "image": "syn0046_L2",
+   "defects": [
+    "arithmetic_error"
+   ],
+   "raised": [
+    "tariff_arithmetic_error"
+   ]
+  },
+  {
+   "image": "syn0047_L2",
+   "defects": [
+    "retrieval_late"
+   ],
+   "raised": [
+    "retrieval_charge_beyond_time_limit"
+   ]
+  },
+  {
+   "image": "syn0048_L2",
+   "defects": [],
+   "raised": []
+  },
+  {
+   "image": "syn0049_L2",
+   "defects": [
+    "average_too_long"
+   ],
+   "raised": [
+    "average_billing_beyond_limit"
+   ]
+  },
+  {
+   "image": "syn0050_L2",
+   "defects": [
+    "protected_wrongly_removed"
+   ],
+   "raised": [
+    "protected_status_wrongly_removed"
+   ]
+  },
+  {
+   "image": "syn0051_L2",
+   "defects": [],
+   "raised": []
+  },
+  {
+   "image": "syn0052_L2",
+   "defects": [
+    "detection_formula_exceeded"
+   ],
+   "raised": [
+    "detection_units_formula_error"
+   ]
+  },
+  {
+   "image": "syn0052_L3",
+   "defects": [
+    "detection_formula_exceeded"
+   ],
+   "raised": [
+    "detection_units_formula_error"
+   ]
+  },
+  {
+   "image": "syn0053_L2",
+   "defects": [
+    "snapshot_missing"
+   ],
+   "raised": [
+    "snapshot_missing_or_mismatch"
+   ]
+  },
+  {
+   "image": "syn0053_L3",
+   "defects": [
+    "snapshot_missing"
+   ],
+   "raised": []
+  }
+ ]
+}

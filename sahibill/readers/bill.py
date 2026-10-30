@@ -240,7 +240,10 @@ def to_facts(read: dict, phase: int | None = None, confirmed_absent: bool = Fals
         elif kind == "retrieval":
             text = (line.get("text") or "").lower()
             got = re.search(r"retrieved[^0-9]*(\d{4}-\d{2}-\d{2})", text)
-            retrieval = {"replaced": line.get("event_date"), "debit": bm,
+            # The printed line names both dates; take the meter-change date from its own words where it states
+            # one (a reader can put the retrieval date in event_date, as on E3 third set syn0031).
+            changed = re.search(r"(?:meter changed|replaced)(?: on)?[^0-9]{0,12}(\d{4}-\d{2}-\d{2})", text)
+            retrieval = {"replaced": changed.group(1) if changed else line.get("event_date"), "debit": bm,
                          "retrieved": got.group(1) if got else None,
                          "branch": "in_house" if "in-house" in text or "in house" in text else (
                              "manufacturer" if "manufacturer" in text else None),
@@ -276,6 +279,7 @@ def to_facts(read: dict, phase: int | None = None, confirmed_absent: bool = Fals
         issue_date=f.get("issue_date"), due_date=f.get("due_date"),
         units=units,
         carry_forward_shown=bool(num(f.get("carried_forward"))) if f.get("carried_forward") is not None else None,
+        units_carried_forward=num(f.get("carried_forward")),
         snapshot_present=False if state == "blank" else (True if state in ("readable", "unreadable") else None),
         snapshot={"total": snap} if state == "readable" and snap is not None else ({"total": None} if state == "unreadable" else None),
         # an unread stamp is unknown, never "no stamp": only text the model actually read counts as evidence

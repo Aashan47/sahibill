@@ -12,6 +12,29 @@ CL_PERIOD = "Tariff T&C definition 1 (billing month of 31 days or less; prorate 
 CL_STATUS = "Tariff T&C Part-II A-1 definitions (lifeline, protected)"
 CL_ARITH = "NEPRA decision 11-02-2026 Annex-C (S.R.O. 279(I)/2026); FCA Aug 2026 decision; S.R.O. 1501(I)/2026"
 
+ASK_MISREAD = "one figure on the bill may have been misread"
+
+
+def one_digit_variants(x):
+    """Numbers that differ from x in exactly one printed digit (the usual misread of a photographed figure)."""
+    text = f"{x:g}" if isinstance(x, float) else str(x)
+    for i, ch in enumerate(text):
+        if not ch.isdigit():
+            continue
+        for d in "0123456789":
+            if d == ch or (i == 0 and d == "0" and len(text) > 1 and text[1] != "."):
+                continue
+            t = text[:i] + d + text[i + 1:]
+            yield float(t) if "." in t else int(t)
+
+
+def misread_explains(billed, recompute, value):
+    """The variant of `value` that makes the line exact, if a one-digit misread of it accounts for the gap."""
+    if billed is None or value is None:
+        return None
+    return next((v for v in one_digit_variants(value) if abs(money(recompute(v)) - billed) <= 0.01), None)
+
+
 RATES_FROM = "2026-03"   # first billing month certainly under the rationalised table (U10: Feb 2026 unclear)
 
 
@@ -101,9 +124,16 @@ def check_period(f: BillFacts) -> list[Finding]:
     dim = days_in_month(f.billing_month)
     if period <= dim:
         return [Finding("1", OK, clause=CL_PERIOD, numbers={"period_days": period, "days_in_month": dim})]
-    prorated = int(round_half_up(f.units * dim / period))
-    carry = f.units - prorated
+    # A bill that already prorated shows the units it carried to the next bill (CSM 6.1.1.1), either as "units
+    # carried forward" or, on a pro-rata present reading, as outstanding units; `units` then excludes them.
+    # Prorate what the meter recorded over the period, never the already-prorated units a second time.
+    carried = f.units_carried_forward or (f.carried_forward_units if f.pro_rata_reading else None) or 0
+    recorded = f.units + carried
+    prorated = int(round_half_up(recorded * dim / period))
+    carry = recorded - prorated
     nums = {"period_days": period, "days_in_month": dim, "prorated_units": prorated, "carry_forward": carry}
+    if carried:
+        nums["units_on_bill_carried_forward"] = carried
     exp_status, _, miss = eligible_status(f, prorated)
     if exp_status is None:
         return [Finding("1", CBD, clause=CL_PERIOD, numbers=nums, missing=miss)]
@@ -146,6 +176,11 @@ def check_arithmetic(f: BillFacts) -> list[Finding]:
         fx_rate = T.slab_row(table, units)[1][1]
         exp_fixed = money(fx_rate * (f.sanctioned_load_kw or 0)) if f.sanctioned_load_kw is not None else None
     lines = [("variable", exp_var, f.variable_billed), ("fixed", exp_fixed, f.fixed_billed)]
+    # For each charge line, the figure read from the photo it is computed from, and how to recompute it.
+    inputs = {} if f.tou else {
+        "variable": ("units", units, lambda u: expected_variable(status_name, u)),
+        "fixed": ("sanctioned load", f.sanctioned_load_kw, lambda kw: fx_rate * kw),
+    }
     # FCA: billed two months later on the reference month's units (lifeline exempt). The bill's own note, where
     # printed, names the month, its units and the rate; each is checked against the history and NEPRA's decision.
     y, m = map(int, f.billing_month.split("-"))
@@ -170,6 +205,7 @@ def check_arithmetic(f: BillFacts) -> list[Finding]:
             out.append(Finding("9", CBD, clause=CL_ARITH, missing=[f"units of {ref_month} in the history"]))
         else:
             lines.append(("fpa", money(hist_units * nepra_rate), f.fpa_billed))
+            inputs["fpa"] = (f"units of {ref_month} in the history", hist_units, lambda u: u * nepra_rate)
     if f.qta_billed is not None:
         q = T.QTA_BY_BILLING_MONTH.get(f.billing_month)
         if status_name == "lifeline":
@@ -178,6 +214,8 @@ def check_arithmetic(f: BillFacts) -> list[Finding]:
             out.append(Finding("9", CBD, clause=CL_ARITH, missing=[f"QTA rate for billing month {f.billing_month}"]))
         else:
             lines.append(("qta", money(units * q), f.qta_billed))
+            if not f.tou:
+                inputs["qta"] = ("units", units, lambda u: u * q)
     for name, exp, billed in lines:
         if billed is None or exp is None:
             continue
@@ -190,6 +228,15 @@ def check_arithmetic(f: BillFacts) -> list[Finding]:
         diff = money(billed - exp)
         if abs(diff) <= 0.01:
             out.append(Finding("9", OK, clause=CL_ARITH, numbers={"line": name, "expected": exp, "billed": billed}))
+            continue
+        label, value, recompute = inputs.get(name, (None, None, None))
+        alt = misread_explains(billed, recompute, value) if recompute else None
+        if alt is not None:
+            # The line adds up exactly if one digit of the figure it is computed from was misread. A misread
+            # digit is the likelier cause, so ask the household to check the figure before alleging an error.
+            out.append(Finding("9", CBD, clause=CL_ARITH, missing=[ASK_MISREAD],
+                               numbers={"line": name, "figure": label, "read_as": value, "adds_up_if": alt,
+                                        "expected": exp, "billed": billed}))
         else:
             out.append(Finding("9", PROBLEM, "tariff_arithmetic_error", CL_ARITH,
                                {"line": name, "expected": exp, "billed": billed, "difference": diff}))

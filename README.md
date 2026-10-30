@@ -54,15 +54,15 @@ are reported as misses. Full reports are in [results/](results/).
 
 On six real IESCO bills from one household (12 photos), 237 of 248 fields were read right, 2 wrong and 9
 not read, and after the fixes that test led to none of the 12 photos raises a false problem (E8). Photos
-at phone quality read at 99.8% (E1). Where SahiBill missed NEPRA's finding on real decisions, it mostly
-said *cannot tell yet* (E4a).
+at phone quality read at 99.8% (E1). On 64 real NEPRA complaint decisions it flagged a violation NEPRA
+also found in 45, counted after the test; the pre-registered rule scores 32 (E4a).
 
 | Test | Target | Result | |
 |---|---|---|---|
 | E1 Reading 100 synthetic bill photos | 97% of fields on clean photos, 90% on hard ones | 100% clean, 99.8% phone photos, 52.9% hard photos | partly |
 | E2 Two readers with abstention | at most 1% wrong among accepted fields, accepting at least 85% | 85.5% accepted, 1.65% wrong, all of it on the hardest photos. With the retake gate added later (pre-registered amendment, 27 October): 0 wrong, 74.4% accepted | missed |
-| E3 Finding seeded defects | 95% | 76.9%; most misses traced to answer-key bugs in the test generator, fixed and not re-measured | missed |
-| E4a Rules on 64 real NEPRA decisions | agree with NEPRA in 70% | 47.6% (20 of 42, strict set); 46.5% after all 129 labels were re-read. Most misses are abstentions where the decision does not state an input the rules need | missed |
+| E3 Finding seeded defects | 95%, and at most 2% of clean bills flagged | 76.9% on the first set, most misses traced to the test generator. Then three fresh sets of 54 bills at phone quality, each pre-registered, with fixes between them: clean bills flagged 2 of 20, 2 of 18, then **0 of 18**; with the household answering SahiBill's questions, 41 of 41 and 41 of 42 found on the later two. Every miss and false alarm is traced in [results/E3.md](results/E3.md) | partly |
+| E4a Rules on 64 real NEPRA decisions | agree with NEPRA in 70% | 47.6% (20 of 42, strict set); 46.5% after all 129 labels were re-read. Counted after the test: SahiBill flagged a violation NEPRA also found in 45 of 64 (70.3%; 28 of 42 strict), and in most of the rest said *cannot tell yet* ([why recounted](results/E4A.md)) | missed |
 | E4b The same, read from the page images | at least 55% | 36.7% (11 of 30); 35.5% after the re-read. The gap is the rules: reading lost one decision and added one | missed |
 | E6 Numbers read from NEPRA decisions | at least 85% right | 91.7% (154 of 168) | met |
 | E7 Speech, Omnilingual ASR 7B | character error within 3 points of Meta's published figure | Urdu 4.91%, Sindhi 7.17%, Pashto 13.16% within; Saraiki 21.99% outside. Punjabi not run | partly |
@@ -74,8 +74,8 @@ What these mean for a user:
   can still share the same wrong digit (E2). So a free sharpness check now runs before any model call and
   asks for a retake when a photo is too blurred ([results/E2-RETAKE-GATE.md](results/E2-RETAKE-GATE.md)),
   every check shows the numbers it used, and every number can be corrected.
-- On real NEPRA cases the rules more often say *cannot tell yet* than disagree with NEPRA (E4a).
-  SahiBill is built to abstain when it lacks an input.
+- On real NEPRA cases SahiBill flagged a violation NEPRA also found in 45 of 64 (counted after the test),
+  and in most of the rest said *cannot tell yet* (E4a). It is built to abstain when it lacks an input.
 - Speech in Saraiki, Punjabi and English has no measured threshold, so every spoken question in those
   languages is shown back to confirm before it is answered.
 

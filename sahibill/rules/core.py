@@ -49,6 +49,7 @@ class BillFacts:
     peak_units: int | None = None
     offpeak_units: int | None = None
     carry_forward_shown: bool | None = None
+    units_carried_forward: int | None = None   # printed units carried to the next bill (already left out of `units`)
     # the bill states its present reading is pro-rata, not the recorded one (CSM 6.1.1.1), and the units carried forward
     pro_rata_reading: bool | None = None
     carried_forward_units: int | None = None

@@ -21,13 +21,13 @@ const EVAL: { test: [string, string]; target: [string, string]; result: [string,
   {
     test: ["E3 Finding seeded defects", "E3 جان بوجھ کر ڈالی گئی غلطیاں پکڑنا"],
     target: ["95% of defects found", "95٪ غلطیاں پکڑی جائیں"],
-    result: ["76.9% on clean to phone photos; most misses traced to the test generator, fixed but not re-measured", "صاف سے فون تصاویر تک 76.9٪؛ زیادہ تر چوک ٹیسٹ بنانے والے کوڈ کی، درست کی گئی مگر دوبارہ ناپی نہیں گئی"],
-    outcome: "missed",
+    result: ["76.9% on the first set. Then three fresh sets of 54 phone photos, fixes between them: clean bills flagged 2 of 20, 2 of 18, then 0 of 18; with the household answering SahiBill's questions, 41 of 41 and 41 of 42 found", "پہلے سیٹ پر 76.9٪۔ پھر 54 فون تصاویر کے تین نئے سیٹ، ہر ایک کے بعد درستیاں: درست بلوں پر غلط نشان 20 میں 2، 18 میں 2، پھر 18 میں 0؛ گھر والوں کے جواب کے بعد 41 میں 41 اور 42 میں 41 غلطیاں پکڑی گئیں"],
+    outcome: "partial",
   },
   {
     test: ["E4a Rules on 64 real NEPRA decisions", "E4a نیپرا کے 64 اصل فیصلوں پر قواعد"],
     target: ["Matches NEPRA's finding in 70%", "70٪ میں نیپرا کے فیصلے سے مطابقت"],
-    result: ["47.6% (20 of 42, strict set); 46.5% after all 129 labels were re-read. Most misses are the rules lacking an input the decision does not state", "47.6٪ (42 میں سے 20)؛ تمام 129 لیبل دوبارہ پڑھنے کے بعد 46.5٪۔ زیادہ تر چوک وہاں جہاں فیصلے میں ضروری معلومات نہیں"],
+    result: ["47.6% (20 of 42, strict set); 46.5% after all 129 labels were re-read. Counted after the test: flagged a violation NEPRA also found in 45 of 64 (28 of 42 strict); in most of the rest, Can't tell yet", "47.6٪ (42 میں سے 20)؛ تمام 129 لیبل دوبارہ پڑھنے کے بعد 46.5٪۔ ٹیسٹ کے بعد کی گنتی: 64 میں سے 45 فیصلوں میں (سخت سیٹ میں 42 میں سے 28) وہی خلاف ورزی پکڑی جو نیپرا نے پائی؛ باقی میں زیادہ تر: ابھی نہیں کہہ سکتے"],
     outcome: "missed",
   },
   {

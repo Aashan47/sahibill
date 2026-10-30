@@ -9,7 +9,7 @@ from sahibill.synth.model import make_bill
 from sahibill.synth.oracle import oracle_read
 
 
-@pytest.mark.parametrize("seed", [20261026, 7, 99])
+@pytest.mark.parametrize("seed", [20261026, 7, 99, 20261029, 20261031])
 def test_answer_key_matches_rules_on_perfect_reading(seed):
     problems = []
     for i, ds in enumerate(plan(60, seed)):
