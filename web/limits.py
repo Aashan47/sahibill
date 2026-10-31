@@ -25,11 +25,13 @@ PER_VISITOR = {
     "meter": (30, HOUR),     # SAM 3 on Modal
     "warm": (20, HOUR),
     "edit": (200, HOUR),     # answers and corrections: no model call, only disk
+    "agent": (20, HOUR),     # case-agent segments: up to 10 Muse Spark calls each
 }
 # Whole site per day: Modal calls (speech, SAM 3, warm-up) and new photos.
 PER_SITE = {
     "modal": (int(os.environ.get("SAHIBILL_MODAL_CALLS_PER_DAY", "400")), DAY),
     "photos": (int(os.environ.get("SAHIBILL_PHOTOS_PER_DAY", "300")), DAY),
+    "agent": (int(os.environ.get("SAHIBILL_AGENT_RUNS_PER_DAY", "150")), DAY),
 }
 MESSAGE = "Too many requests from this connection. Please wait a while and try again."
 SITE_MESSAGE = "This service has reached its limit for today. Please try again tomorrow, or open a sample bill."

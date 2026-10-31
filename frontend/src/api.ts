@@ -82,6 +82,44 @@ export interface Heard {
   sure: boolean;
 }
 
+export interface AgentStep {
+  kind: "think" | "look" | "check" | "rule" | "ask" | "answer" | "letter" | "paused";
+  en: string;
+  ur: string;
+  settle_by?: string;
+  changes?: { title: string; title_ur: string; status: "problem_found" | "looks_right" | "cannot_be_determined" }[];
+  tool?: string;
+  args?: string;
+  reasoning_tokens?: number;
+  seconds?: number;
+  note?: string | null;
+  tools?: string[];
+  replayed?: boolean;
+}
+export interface AgentAsk {
+  item_id: string;
+  kind: "confirm" | "date" | "figure" | "meter";
+  text: string;
+  text_ur: string;
+  reason: string | null;
+  month: string;
+  month_ur: string;
+  read_as?: number;
+  adds_up_if?: number;
+}
+export interface AgentState {
+  status: "idle" | "running" | "waiting" | "done" | "paused" | "failed";
+  trace: AgentStep[];
+  ask: AgentAsk | null;
+  summary: { text?: string; en?: string; ur?: string; source: string } | null;
+  plan?: { kind: "look" | "ask" | "check" | "letter" | "finish"; text: string }[];
+  grounding?: { numbers: { n: string; ok: boolean }[]; ok: boolean; refused: number } | null;
+  stats?: { calls: number; tokens_in: number; tokens_out: number; reasoning_tokens: number };
+  cost_usd?: number;
+  started?: number;
+  model?: string;
+}
+
 export class ApiError extends Error {}
 
 async function call<T>(url: string, init?: RequestInit): Promise<T> {
@@ -160,6 +198,15 @@ export const api = {
   ask(id: string, billId: string, question: string, language: Spoken) {
     return call<{ text: string; source: string }>(
       `/api/reports/${encodeURIComponent(id)}/bills/${encodeURIComponent(billId)}/ask`, json({ question, language }));
+  },
+  agent(id: string) {
+    return call<AgentState>(`/api/reports/${encodeURIComponent(id)}/agent`);
+  },
+  agentStart(id: string, language: "en" | "ur") {
+    return call<AgentState>(`/api/reports/${encodeURIComponent(id)}/agent`, json({ language }));
+  },
+  agentReply(id: string, value: string) {
+    return call<AgentState>(`/api/reports/${encodeURIComponent(id)}/agent/reply`, json({ value }));
   },
   correct(id: string, billId: string, field: string, value: string) {
     return call<Report>(`/api/reports/${encodeURIComponent(id)}/bills/${encodeURIComponent(billId)}/correct`,

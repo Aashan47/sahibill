@@ -26,6 +26,7 @@ from sahibill.pipeline import analyze_reading
 from sahibill.readers.agree import NUMERIC, _norm
 from sahibill.readers.bill import FIELDS, month_key, num, read_bill
 from sahibill.readers import quality
+from sahibill.rules.consumption import ASK_MISREAD
 from sahibill.readers.llm import CACHE, BudgetExceeded
 
 READINGS = CACHE / "readings"
@@ -350,6 +351,9 @@ def view(rid: str) -> dict | None:
             "questions": a["questions"], "answers": answers, "next_steps": a["next_steps"],
             "complaint": a["complaint"], "history": a["history"],
             "photo_agreement": b["raw"].get("photo_agreement"),
+            # charge lines that add up if one digit of a read figure is changed (asked, never alleged)
+            "misreads": [{k: f["numbers"].get(k) for k in ("line", "figure", "read_as", "adds_up_if")}
+                         for f in a["findings"] if ASK_MISREAD in (f.get("missing") or [])],
             "cost_usd": round(sum(p["cost_usd"] for p in b["photos"]), 5)})
 
     statuses = [p["status"] for p in state["photos"]]

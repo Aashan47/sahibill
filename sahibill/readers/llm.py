@@ -56,10 +56,13 @@ def _spent() -> float:
 
 
 def chat(messages: list, provider: str = "nebius", max_tokens: int = 6000, reasoning_effort: str | None = None,
-         tag: str = "") -> dict:
-    """Returns {"content": str, "usage": dict, "cached": bool, "usd": float}."""
+         tag: str = "", tools: list | None = None) -> dict:
+    """Returns {"content": str, "usage": dict, "cached": bool, "usd": float}, plus "tool_calls" when `tools`
+    (OpenAI function definitions) are offered and the model calls one."""
     cfg = PROVIDERS[provider]
     body = {"model": cfg["model"], "messages": messages, "max_tokens": max_tokens}
+    if tools:
+        body["tools"] = tools
     if reasoning_effort:
         body["reasoning_effort"] = reasoning_effort
     key = hashlib.sha256(json.dumps([provider, body], sort_keys=True).encode()).hexdigest()
@@ -93,7 +96,10 @@ def chat(messages: list, provider: str = "nebius", max_tokens: int = 6000, reaso
         raise RuntimeError(f"provider {provider} failed: {last}")
     u = resp.get("usage", {})
     usd = (u.get("prompt_tokens", 0) * cfg["price_in"] + u.get("completion_tokens", 0) * cfg["price_out"]) / 1e6 * VAT
-    out = {"content": resp["choices"][0]["message"].get("content") or "", "usage": u, "usd": round(usd, 6),
+    msg = resp["choices"][0]["message"]
+    out = {"content": msg.get("content") or "", "usage": u, "usd": round(usd, 6),
+           "tool_calls": [{"id": c.get("id"), "name": c["function"]["name"], "arguments": c["function"].get("arguments") or "{}"}
+                          for c in msg.get("tool_calls") or []],
            "latency_s": round(time.time() - t, 1), "provider": provider, "model": cfg["model"],
            "reasoning_effort": reasoning_effort}
     cpath.parent.mkdir(parents=True, exist_ok=True)

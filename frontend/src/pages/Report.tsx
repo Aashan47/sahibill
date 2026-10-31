@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { api, ApiError, type Bill, type NextStep, type Report as ReportT } from "../api";
 import { Chip, Section, Stamp } from "../components/bits";
 import { Ask } from "../components/Ask";
+import { Agent } from "../components/Agent";
 import { Cliff } from "../cliff/Cliff";
 import { Chain, CheckRows, Letter, Questions, ReadingTable, UnitsChart } from "../components/report";
 import { fieldName } from "../fields";
@@ -109,6 +110,12 @@ export default function Report() {
       </header>
 
       {err ? <p className="alert alert--bad" role="alert">{err}</p> : null}
+
+      {!reading && bills.some((b) => b.status === "done") ? (
+        <Section title={t.agent.title} titleUr={dicts.ur.agent.title} id="agent">
+          <Agent reportId={report.id} onChange={load} />
+        </Section>
+      ) : null}
 
       {!reading && report.household_mode !== false && history.length > 1 ? (
         <Section title={t.report.unitsTitle} titleUr={dicts.ur.report.unitsTitle} id="units">

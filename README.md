@@ -44,8 +44,21 @@ Models read and listen. Code decides every number.
 | Hear a spoken question | **Omnilingual ASR** 7B and 1B (Meta) on Modal | Both models transcribe; if they disagree beyond the threshold set for that language, SahiBill asks "Did you say...?" |
 | Answer the question | **Muse Spark Open** | Answers from this bill's findings only. An answer that adds any number the findings do not contain is thrown away, and a plain answer built from the findings is shown. |
 | Write the complaint | SahiBill code | Built only from the findings. |
+| Work the case | **Muse Spark Open** as an agent, with SahiBill's code as its tools | Writes a plan, looks at what is still open, asks the household only what the photos could not show (at most three questions, "I'm not sure" always allowed), runs SAM 3 to find a meter photo before asking anyone to read it, and prepares the complaint with the dates the manual sets. Every answer is applied and the bill re-checked by code; the page shows the plan, each model call's reasoning tokens, each tool step and what changed, and checks every number in the agent's summary against the tools' results. |
 
 Muse Glimmer 30B (Meta, open weights) was tested as a second reader in evaluation E2 and is not used live.
+
+## The case agent
+
+`sahibill/agent.py`. Muse Spark Open is called with tool definitions (OpenAI-style tool calling on Nebius) and
+picks each next step; the tools are SahiBill's own functions: list the open items, re-check a bill, explain a
+rule, run SAM 3 on the meter photo, prepare the complaint. It runs in short segments, stopping when it needs the
+household and continuing when they answer (`/api/reports/{id}/agent`). Guards in code: the household is only
+asked items the rules raised; every answer is applied and the bill re-checked whatever the model plans next; the
+model's words (a plan step, a reason for a question, the summary) are kept only if every number in them came from
+a tool, in the right script, with no markdown; a refused summary is replaced by one written by code. A case costs
+about two to four cents and is capped per visitor and per day. Tests with a scripted stand-in for the model:
+`tests/test_agent.py`.
 
 ## Results
 

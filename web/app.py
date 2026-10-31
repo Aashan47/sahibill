@@ -22,7 +22,7 @@ from fastapi.responses import FileResponse, JSONResponse, Response
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
-from sahibill import report, voice
+from sahibill import agent, report, voice
 from sahibill.pipeline import analyze
 from sahibill.readers.llm import BudgetExceeded
 from web import limits
@@ -153,6 +153,44 @@ def correct(request: Request, rid: str, bill_id: str, body: Correction):
     if v is None:
         raise HTTPException(404, "No such report.")
     return v
+
+
+class AgentStart(BaseModel):
+    language: str = "en"
+
+
+class AgentReply(BaseModel):
+    value: str | float | int
+
+
+@app.get("/api/reports/{rid}/agent")
+def agent_state(rid: str):
+    st = agent.state(rid)
+    if st is None:
+        raise HTTPException(404, "No such report.")
+    return st
+
+
+@app.post("/api/reports/{rid}/agent")
+def agent_start(request: Request, rid: str, body: AgentStart):
+    """Muse Spark Open works the case with SahiBill's code as tools, until it needs the household or finishes."""
+    limits.check(request, "agent", site="agent")
+    st = agent.start(rid, body.language)
+    if st is None:
+        raise HTTPException(404, "No such report.")
+    return st
+
+
+@app.post("/api/reports/{rid}/agent/reply")
+def agent_reply(request: Request, rid: str, body: AgentReply):
+    limits.check(request, "agent", site="agent")
+    try:
+        st = agent.reply(rid, body.value)
+    except ValueError as e:
+        raise HTTPException(400, str(e)) from e
+    if st is None:
+        raise HTTPException(404, "No such report.")
+    return st
 
 
 def _bill(rid: str, bill_id: str) -> dict:
